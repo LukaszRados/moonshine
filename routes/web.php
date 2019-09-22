@@ -9,4 +9,7 @@ if (array_key_exists($locale, config('admin.languages'))) {
 
 Route::middleware('localisation.front')->prefix($locale)->group(function () {
     Route::get('/', 'PagesController@index')->name('home');
+    Route::get('/boat', 'PagesController@boat')->name('boat');
+    Route::get('/crew', 'PagesController@crew')->name('crew');
+    Route::get('/contact', 'PagesController@contact')->name('contact');
 });

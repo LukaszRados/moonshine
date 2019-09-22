@@ -30,6 +30,11 @@
 .footer__item:hover {
     opacity: .5;
 }
+.footer__nav-social {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 @media screen and (min-width: 900px) {
     .footer {
         padding: 45px 15px;
