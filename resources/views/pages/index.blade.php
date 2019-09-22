@@ -1,1 +1,5 @@
-Hello world
+@extends('layouts.app')
+
+@section('body')
+    Hello
+@endsection
