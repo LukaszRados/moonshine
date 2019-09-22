@@ -15,26 +15,6 @@
     </div>
 </header>
 
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum
+@include('partials.boat')
 
 @endsection

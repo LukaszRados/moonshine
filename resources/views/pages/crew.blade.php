@@ -2,7 +2,7 @@
 
 @section('body')
 
-<header class='hero' style='background-image: url({{ asset('img/test.jpg') }})'>
+<header class='hero' style='background-image: url({{ asset('img/bg/crew.jpg') }})'>
     <div class='hero__navigation'>
         @include('partials.navigation')
     </div>

@@ -43,6 +43,10 @@
     .hero {
         background-position: right center;
         background-size: 50% auto;
+        min-height: 500px;
+    }
+    .hero--full {
+        min-height: 80vh;
     }
     .hero__intro {
         font-size: 1.4em;
