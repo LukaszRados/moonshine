@@ -10,4 +10,19 @@ class PagesController extends Controller
     {
         return view('pages.index');
     }
+    
+    public function crew()
+    {
+        return view('pages.crew');
+    }
+    
+    public function boat()
+    {
+        return view('pages.boat');
+    }
+    
+    public function contact()
+    {
+        return view('pages.contact');
+    }
 }
