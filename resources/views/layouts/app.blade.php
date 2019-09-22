@@ -24,6 +24,8 @@
 
     <body>
         @yield('body')
+
+        @include('partials.newsletter')
         @include('partials.footer')
     </body>
 
