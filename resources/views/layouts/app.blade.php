@@ -15,7 +15,7 @@
         <meta property='og:image' content='@section('meta.facebook.image'){{ asset('img/facebook.jpg') }}@show'> --}}
 
         {{-- <link rel='icon' type='image/png' href='{{ asset('img/favicon/96x96.png') }}' sizes='96x96'> --}}
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|PT+Serif:400,400i&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
 
         <link rel='stylesheet' href='{{ asset(mix('css/app.css')) }}'>
         <base href='{{ url('/') }}'>
