@@ -2,8 +2,10 @@
 $locale = request()->segment(1);
 if (array_key_exists($locale, config('admin.languages'))) {
     config()->set('locale', $locale);
+    App::setLocale($locale);
 } else {
     config()->set('locale', 'pl');
+    App::setLocale('pl');
     $locale = null;
 }
 

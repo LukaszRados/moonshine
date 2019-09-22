@@ -7,7 +7,7 @@
         @include('partials.navigation')
     </div>
     <div class='hero__content'>
-        <p class='hero__intro'>Sailing Yacht</p>
+        <p class='hero__intro'>{{ __('messages.sailing_yacht') }}</p>
         <h1 class='hero__header'>Moonshine</h1>
     </div>
     <div class='hero__footer'>
