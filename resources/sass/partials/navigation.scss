@@ -1,0 +1,138 @@
+.navigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+}
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation__language {
+    @include header;
+    color: #fff;
+    display: inline-block;
+    font-size: .6em;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    z-index: 10;
+}
+.navigation__social {
+    display: none;
+}
+.navigation__social li {
+    display: inline-block;
+    margin-right: 14px;
+}
+.navigation__logo {
+    position: relative;
+    width: 40px;
+    z-index: 10;
+}
+.navigation__left,
+.navigation__right {
+    width: calc(50% - 20px);
+}
+.navigation__right {
+    text-align: right;
+}
+.navigation__toggle {
+    background: transparent;
+    border: 0;
+    line-height: 1;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+.navigation__toggle svg {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-width: 4;
+}
+.navigation__list {
+    display: none;
+    text-align: left;
+}
+.navigation__list li {
+    margin-bottom: 10px;
+}
+.navigation__list a {
+    @include header;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+/* Mobile open navigation */
+
+.navigation.is-open .navigation__list {
+    align-items: flex-start;
+    background: $color-primary;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 9;
+}
+.navigation.is-open .navigation__social {
+    align-items: center;
+    display: flex;
+    left: 25px;
+    position: absolute;
+    top: calc(100vh - 60px);
+    z-index: 10;
+}
+
+/* Desktop styles */
+
+@media screen and (min-width: 900px) {
+    .navigation {
+        padding: 30px 15px;
+    }
+    .navigation a:hover {
+        opacity: .5;
+    }
+    .navigation__left {
+        align-items: center;
+        display: flex;
+    }
+    .navigation__language {
+        margin-left: 20px;
+    }
+    .navigation__social {
+        display: flex;
+        font-size: 0;
+        position: static;
+    }
+    .navigation__social li {
+        align-items: center;
+        display: flex;
+    }
+    .navigation__toggle {
+        display: none;
+    }
+    .navigation__list {
+        display: block;
+        text-align: right;
+    }
+    .navigation__list li {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+    .navigation__list a {
+        font-size: .6em;
+    }
+}

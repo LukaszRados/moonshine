@@ -14,3 +14,15 @@ body {
     overflow-x: hidden;
     padding: 0;
 }
+
+html.is-blocked,
+body.is-blocked {
+    overflow-y: hidden;
+}
+
+@media screen and (min-width: 700px) {
+    html.is-blocked,
+    body.is-blocked {
+        overflow-y: auto;
+    }
+}

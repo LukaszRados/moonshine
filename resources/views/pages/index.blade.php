@@ -1,5 +1,31 @@
 @extends('layouts.app')
 
 @section('body')
-    Hello
+
+<header class='hero'>
+    @include('partials.navigation')
+</header>
+
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum<br>
+Lorem ipsum
+
 @endsection
