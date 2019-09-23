@@ -2,6 +2,8 @@
 
 return [
     'index' => [
+        'description' => 'Sailing Yacht Moonshine - Group of friends taking a gap year and sailing Europe',
+        'keywords' => 'sailing, sails, yacht, sailing videos, gap year, living on board, cruising',
         'header' => [
             'yacht' => 'Sailing Yacht',
             'name' => 'Moonshine',
@@ -10,7 +12,7 @@ return [
         'crew' => [
             'header' => 'The Crew',
             'names' => 'Marta, Jola,<br>Wojtek &amp; Łukasz',
-            'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio lorem, varius nec nulla ut, porta tempor ipsum. Maecenas hendrerit euismod dolor, vitae pharetra leo.',
+            'body' => 'We have met during studies in Kraków and we also started travelling together. Few years back we came up with an idea of buying a small sailing yacht and going for a once in the lifetime adventure.',
             'link' => 'More about the crew',
         ],
     ],
@@ -51,7 +53,7 @@ return [
         ],
         'visit_us' => [
             'header' => 'Visit us on board',
-            'body' => 'Jacques Fauroux\'s stylish and harmonious design is lively and fast. Even in the light winds, it wants only to make you feel like you\'re in control. The Sun Odyssey 36.2 adds ease of handling to the pleasure of on-board comfort. Compared to its competitors of the same size it is by far the fastest.',
+            'body' => 'We love having guests on board Moonshine! That\'s why we invite you to visit us. Check where we are at the moment and drop us an email if you want to spend few days with us. We don\'t charge money for a visit!',
             'send_email' => 'Send us an e-mail',
         ],
     ]

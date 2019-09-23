@@ -2,15 +2,17 @@
 
 return [
     'index' => [
+        'description' => 'Jacht Moonshine - Grupa przyjaciół podczas rocznej podróży żeglarskiej po Europie',
+        'keywords' => 'żeglarstwo, żagle, cruising, żeglarskie filmy, żaglówka, łódka, śródziemne, jeanneau',
         'header' => [
             'yacht' => 'Jacht',
             'name' => 'Moonshine',
-            'body' => 'A group of four friends who decided to take a gap year to cruise around Europe in a 36-feet sailing yacht. This is our journal, gallery and a way to communicate with friends.',
+            'body' => 'Grupa znajomych którzy postanowili zrobić sobie rok przerwy i żeglować po Europie na pokładzie 11-metrowego jachtu. Ta strona to nasz dziennik podróży, galeria zdjęć i sposób komunikacji z przyjaciółmi.',
         ],
         'crew' => [
             'header' => 'Załoga',
             'names' => 'Marta, Jola,<br>Wojtek i Łukasz',
-            'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio lorem, varius nec nulla ut, porta tempor ipsum. Maecenas hendrerit euismod dolor, vitae pharetra leo.',
+            'body' => 'Poznaliśmy się na studiach w Krakowie. Często wspólnie podróżowaliśmy, w tym żeglarsko. Kilka lat temu wpadliśmy na pomysł kupienia małego jachtu i popłynięcia w przygodę życia.',
             'link' => 'Więcej o załodze',
         ],
     ],
@@ -51,7 +53,7 @@ return [
         ],
         'visit_us' => [
             'header' => 'Odwiedź nas na pokładzie',
-            'body' => 'Jacques Fauroux\'s stylish and harmonious design is lively and fast. Even in the light winds, it wants only to make you feel like you\'re in control. The Sun Odyssey 36.2 adds ease of handling to the pleasure of on-board comfort. Compared to its competitors of the same size it is by far the fastest.',
+            'body' => 'Uwielbiamy kiedy odwiedzają nas goście - starzy znajomi lub zupełnie nowe osoby. Dlatego zapraszamy Cię na pokład Moonshine. Sprawdź, gdzie aktualnie przebywamy i napisz do nas maila. Nie pobieramy opłat za koję!',
             'send_email' => 'Wyślij nam maila',
         ],
     ]

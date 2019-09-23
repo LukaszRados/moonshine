@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('meta.description') {{ __('pages.index.description') }} @stop
+@section('meta.keywords') {{ __('pages.index.keywords') }} @stop
+
 @section('body')
 
 <header class='hero hero--full' style='background-image: url({{ asset('img/test.jpg') }})'>

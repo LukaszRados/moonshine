@@ -10,11 +10,11 @@
         <meta name='keywords' content='@yield('meta.keywords')'>
 
         <meta property='og:url' content='{{ url()->current() }}'>
-        <meta property='og:title' content='@yield('meta.title')'>
+        <meta property='og:title' content='@yield('meta.title') {{ __('messages.page_title') }}'>
         <meta property='og:description' content='@yield('meta.description')'>
-        {{-- <meta property='og:image' content='@section('meta.facebook.image'){{ asset('img/facebook.jpg') }}@show'> --}}
+        <meta property='og:image' content='@section('meta.facebook.image'){{ asset('img/facebook.jpg') }}@show'>
 
-        {{-- <link rel='icon' type='image/png' href='{{ asset('img/favicon/96x96.png') }}' sizes='96x96'> --}}
+        <link rel='icon' type='image/png' href='{{ asset('img/favicon.png') }}' sizes='96x96'>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
 
         <link rel='stylesheet' href='{{ asset(mix('css/app.css')) }}'>
