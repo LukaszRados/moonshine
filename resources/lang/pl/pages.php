@@ -33,5 +33,18 @@ return [
         'title' => 'Kontakt',
         'description' => 'Skontaktuj się z załogą jachtu Moonshine.',
         'keywords' => 'żeglarstwo, żagle, jacht, żeglarskie video, żeglarskie filmy',
+        'email' => 'moonshineyacht@gmail.com',
+        'position' => [
+            'header' => 'Aktualna pozycja',
+            'position' => '51&deg;37&quot;12\' N, 0&deg;48&quot;11\' E',
+            'city' => 'Burnham on Crouch, Wielka Brytania',
+            'last_updated' => 'Ostatnia aktualizacja',
+            'date' => '23 września 2019',
+        ],
+        'visit_us' => [
+            'header' => 'Odwiedź nas na pokładzie',
+            'body' => 'Jacques Fauroux\'s stylish and harmonious design is lively and fast. Even in the light winds, it wants only to make you feel like you\'re in control. The Sun Odyssey 36.2 adds ease of handling to the pleasure of on-board comfort. Compared to its competitors of the same size it is by far the fastest.',
+            'send_email' => 'Wyślij nam maila',
+        ],
     ]
 ];

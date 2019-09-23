@@ -17,26 +17,39 @@
     <div class='hero__footer'></div>
 </header>
 
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum
+<div class='contact'>
+    <div class='contact__head'>
+        <h2 class='contact__position-header'>{{ __('pages.contact.position.header') }}</h2>
+        <p class='contact__position-current'>
+            {!! __('pages.contact.position.position') !!}<br>
+            {{ __('pages.contact.position.city') }}
+        </p>
+        <p class='contact__position-updated'>
+            {{ __('pages.contact.position.last_updated') }}: {{ __('pages.contact.position.date') }}.
+            {{-- <a href='#'>See on a map</a> --}}
+        </p>
+    </div>
+
+    <table class='contact__table'>
+        <tr>
+            <td>E-mail</td>
+            <td><a href='mailto:{{ __('pages.contact.email') }}'>{{ __('pages.contact.email') }}</a></td>
+        </tr>
+        <tr>
+            <td>Instagram</td>
+            <td><a href='https://instagram.com/sailingmoonshine'>@sailingmoonshine</a></td>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td><a href='https://www.facebook.com/sailingmoonshine/'>Sailing Moonshine</a></td>
+        </tr>
+    </table>
+
+    <div class='contact__visit'>
+        <h3>{{ __('pages.contact.visit_us.header') }}</h3>
+        <p>{{ __('pages.contact.visit_us.body') }}</p>
+        <p><a href='mailto:{{ __('pages.contact.email') }}'>{{ __('pages.contact.visit_us.send_email') }}</a></p>
+    </div>
+</div>
 
 @endsection

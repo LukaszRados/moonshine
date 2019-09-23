@@ -33,5 +33,18 @@ return [
         'title' => 'Contact us',
         'description' => 'Contact the crew of Moonshine Sailing Yacht.',
         'keywords' => 'yacht, crew, sailing, sailing videos',
+        'email' => 'moonshineyacht@gmail.com',
+        'position' => [
+            'header' => 'Current position',
+            'position' => '51&deg;37&quot;12\' N, 0&deg;48&quot;11\' E',
+            'city' => 'Burnham on Crouch, United Kingdom',
+            'last_updated' => 'Last updated',
+            'date' => 'September 23, 2019',
+        ],
+        'visit_us' => [
+            'header' => 'Visit us on board',
+            'body' => 'Jacques Fauroux\'s stylish and harmonious design is lively and fast. Even in the light winds, it wants only to make you feel like you\'re in control. The Sun Odyssey 36.2 adds ease of handling to the pleasure of on-board comfort. Compared to its competitors of the same size it is by far the fastest.',
+            'send_email' => 'Send us an e-mail',
+        ],
     ]
 ];

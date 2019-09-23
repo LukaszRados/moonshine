@@ -1,0 +1,9 @@
+@mixin underline {
+    border-bottom: 2px solid rgba(30, 55, 153, .2);
+    display: inline;
+    text-decoration: none;
+
+    &:hover {
+        border-bottom-color: rgba(30, 55, 153, .5);
+    }
+}
