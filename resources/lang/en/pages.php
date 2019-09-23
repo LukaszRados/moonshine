@@ -1,6 +1,11 @@
 <?php
 
 return [
+    'index' => [
+        'header_yacht' => 'Sailing Yacht',
+        'header_name' => 'Moonshine',
+        'body' => 'A group of four friends who decided to take a gap year to cruise around Europe in a 36-feet sailing yacht. This is our journal, gallery and a way to communicate with friends.',
+    ],
     'crew' => [
         'title' => 'The Crew',
         'description' => 'Meet the crew of the sailing yacht Moonshine cruising around the Europe.',
