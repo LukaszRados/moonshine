@@ -2,9 +2,17 @@
 
 return [
     'index' => [
-        'header_yacht' => 'Sailing Yacht',
-        'header_name' => 'Moonshine',
-        'body' => 'A group of four friends who decided to take a gap year to cruise around Europe in a 36-feet sailing yacht. This is our journal, gallery and a way to communicate with friends.',
+        'header' => [
+            'yacht' => 'Sailing Yacht',
+            'name' => 'Moonshine',
+            'body' => 'A group of four friends who decided to take a gap year to cruise around Europe in a 36-feet sailing yacht. This is our journal, gallery and a way to communicate with friends.',
+        ],
+        'crew' => [
+            'header' => 'The Crew',
+            'names' => 'Marta, Jola,<br>Wojtek &amp; Łukasz',
+            'body' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas odio lorem, varius nec nulla ut, porta tempor ipsum. Maecenas hendrerit euismod dolor, vitae pharetra leo.',
+            'link' => 'More about the crew',
+        ],
     ],
     'crew' => [
         'title' => 'The Crew',

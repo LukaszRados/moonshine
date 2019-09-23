@@ -41,6 +41,7 @@ return [
                 'title' => 'Silnik',
                 'value' => 'Yanmar 3GM30F (27 HP)',
             ],
-        ]
+        ],
+        'more' => 'Więcej o jachcie',
     ]
 ];

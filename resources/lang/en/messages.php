@@ -41,6 +41,7 @@ return [
                 'title' => 'Engine',
                 'value' => 'Yanmar 3GM30F (27 HP)',
             ],
-        ]
+        ],
+        'more' => 'More about the yacht',
     ]
 ];

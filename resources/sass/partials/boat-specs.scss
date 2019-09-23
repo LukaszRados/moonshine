@@ -3,13 +3,13 @@
     margin: 20px auto;
     padding: 25px;
 }
-.boat-specs__text h2 {
+.boat-specs__body h2 {
     font-family: $font-serif;
     font-size: 1.6em;
     font-weight: normal;
     margin: 0 0 20px;
 }
-.boat-specs__text p {
+.boat-specs__text {
     font-family: $font-serif;
     font-size: 1em;
     line-height: 1.7;
@@ -28,6 +28,15 @@
 .boat-specs tr:last-child td {
     border-bottom: 0;
 }
+.boat-specs__link {
+    margin: 20px 0 0;
+}
+.boat-specs__link a {
+    @include header;
+    @include underline;
+    color: $color-link;
+    font-size: .6em;
+}
 .boat-specs__figure {
     display: none;
 }
@@ -36,7 +45,7 @@
         align-items: center;
         display: flex;
     }
-    .boat-specs__text {
+    .boat-specs__body {
         width: 50%;
     }
     .boat-specs__figure {
