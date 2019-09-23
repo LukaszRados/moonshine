@@ -1,0 +1,16 @@
+.content {
+    margin-bottom: 60px;
+}
+.content__photo {
+    display: block;
+    max-width: 100%;
+    margin: 40px auto;
+}
+.content p {
+    font-family: $font-serif;
+    font-size: 1em;
+    line-height: 1.7;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 25px;
+}

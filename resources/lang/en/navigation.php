@@ -3,7 +3,7 @@
 return [
     'blog' => 'Blog',
     'crew' => 'Crew',
-    'boat' => 'Boat',
+    'boat' => 'Yacht',
     'route' => 'Route',
     'videos' => 'Videos',
     'contact' => 'Contact',

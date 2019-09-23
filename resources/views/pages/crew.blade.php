@@ -11,12 +11,10 @@
         @include('partials.navigation')
     </div>
     <div class='hero__content'>
-        <p class='hero__intro'>s/y Moonshine</p>
+        <p class='hero__intro'>{{ __('messages.page_title_shorter') }}</p>
         <h1 class='hero__header'>{{ __('pages.crew.title') }}</h1>
     </div>
-    <div class='hero__footer'>
-        <img src='{{ asset('img/scroll.png') }}' alt='' role='presentation' width='16' height='27'>
-    </div>
+    <div class='hero__footer'></div>
 </header>
 
 Lorem ipsum<br>

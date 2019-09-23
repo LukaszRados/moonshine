@@ -36,6 +36,9 @@
     -webkit-text-stroke-color: #fff;
 }
 .hero__footer {
+    @include header;
+    color: #fff;
+    font-size: .6em;
     padding: 15px;
     text-align: center;
 }

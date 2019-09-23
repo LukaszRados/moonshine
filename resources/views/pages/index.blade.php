@@ -8,12 +8,12 @@
     </div>
     <div class='hero__content'>
         <p class='hero__intro'>{{ __('messages.sailing_yacht') }}</p>
-        <h1 class='hero__header'>Moonshine</h1>
+        <h1 class='hero__header'>{{ __('messages.yacht_name') }}</h1>
     </div>
-    <div class='hero__footer'>
-        <img src='{{ asset('img/scroll.png') }}' alt='' role='presentation' width='16' height='27'>
-    </div>
+    <div class='hero__footer'></div>
 </header>
+
+@include('partials.boat_specs')
 
 Lorem ipsum<br>
 Lorem ipsum<br>
