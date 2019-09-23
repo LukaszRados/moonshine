@@ -17,26 +17,17 @@
     <div class='hero__footer'></div>
 </header>
 
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum<br>
-Lorem ipsum
+
+<div class='content content--spaced'>
+    @foreach (__('pages.crew.above_photo') as $row)
+        <p>{{ $row }}</p>
+    @endforeach
+
+    <img src='{{ asset('img/crew.jpg') }}' alt='{{ __('pages.crew.photo_alt') }}' class='content__photo'>
+
+    @foreach (__('pages.crew.below_photo') as $row)
+        <p>{{ $row }}</p>
+    @endforeach
+</div>
 
 @endsection

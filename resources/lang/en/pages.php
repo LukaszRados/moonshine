@@ -10,6 +10,15 @@ return [
         'title' => 'The Crew',
         'description' => 'Meet the crew of the sailing yacht Moonshine cruising around the Europe.',
         'keywords' => 'crew, sailing, sails, yacht, sailing videos',
+        'photo_alt' => 'The Crew of Moonshine',
+        'above_photo' => [
+            'row1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mattis dui volutpat auctor. Phasellus ligula ipsum, elementum sit amet pharetra nec, finibus non libero. Suspendisse ullamcorper porttitor blandit.',
+            'row2' => 'Curabitur aliquam urna ex, eget molestie nulla aliquet et. Phasellus at porttitor nulla, vel venenatis turpis. Integer tincidunt tortor id nunc viverra suscipit. Quisque sed imperdiet est, a laoreet lectus.',
+        ],
+        'below_photo' => [
+            'row1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mattis dui volutpat auctor. Phasellus ligula ipsum, elementum sit amet pharetra nec, finibus non libero. Suspendisse ullamcorper porttitor blandit.',
+            'row2' => 'Curabitur aliquam urna ex, eget molestie nulla aliquet et. Phasellus at porttitor nulla, vel venenatis turpis. Integer tincidunt tortor id nunc viverra suscipit. Quisque sed imperdiet est, a laoreet lectus.',
+        ]
     ],
     'boat' => [
         'title' => 'The Yacht',
