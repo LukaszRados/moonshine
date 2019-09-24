@@ -21,14 +21,16 @@ return [
         'description' => 'Meet the crew of the sailing yacht Moonshine cruising around the Europe.',
         'keywords' => 'crew, sailing, sails, yacht, sailing videos',
         'photo_alt' => 'The Crew of Moonshine',
+        'names' => 'Marta, Jola, Wojtek i Łukasz',
         'above_photo' => [
-            'row1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mattis dui volutpat auctor. Phasellus ligula ipsum, elementum sit amet pharetra nec, finibus non libero. Suspendisse ullamcorper porttitor blandit.',
-            'row2' => 'Curabitur aliquam urna ex, eget molestie nulla aliquet et. Phasellus at porttitor nulla, vel venenatis turpis. Integer tincidunt tortor id nunc viverra suscipit. Quisque sed imperdiet est, a laoreet lectus.',
+            'row1' => 'Welcome to our travel journal! We are a group of four friends who first met few years back during university in Kraków. Since 2014 we are travelling (both together and solo) and despite moving around (we lived in Kraków, Warsaw, Lisbon, Tokyo and Amsterdam) we managed to stay in touch and keep rediscovering places already discovered.',
         ],
         'below_photo' => [
-            'row1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mattis dui volutpat auctor. Phasellus ligula ipsum, elementum sit amet pharetra nec, finibus non libero. Suspendisse ullamcorper porttitor blandit.',
-            'row2' => 'Curabitur aliquam urna ex, eget molestie nulla aliquet et. Phasellus at porttitor nulla, vel venenatis turpis. Integer tincidunt tortor id nunc viverra suscipit. Quisque sed imperdiet est, a laoreet lectus.',
-        ]
+            'row1' => 'In September 2019 we made our craziest idea live - we bought a 36-feet long sailing yacht. We intent to live on board and sail Europe during the next year.',
+            'row2' => 'The decision of changing the lifestyle was preceded by two years of a time-consuming planning and searching for a perfect boat, as well as improving our skills. This year we are hoping to set the sails in Burnham on Crouch (UK) and sail south towards the warmer weather.',
+            'row3' => 'This website will be our journal, a place to keep our memories and make sure our parents know we are safe and we are having fun!',
+            'row4' => 'Thanks for visiting us. We encourage you to check other pages and our social media where we post quite regularly.',
+        ],
     ],
     'boat' => [
         'title' => 'The Yacht',

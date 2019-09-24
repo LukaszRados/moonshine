@@ -21,13 +21,15 @@ return [
         'description' => 'Poznaj załogę jachtu Moonshine płynącego dookoła Europy.',
         'keywords' => 'załoga, żeglarstwo, żagle, jacht, żeglarskie video, żeglarskie filmy',
         'photo_alt' => 'Załoga Moonshine',
+        'names' => 'Marta, Jola, Wojtek & Łukasz',
         'above_photo' => [
-            'row1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mattis dui volutpat auctor. Phasellus ligula ipsum, elementum sit amet pharetra nec, finibus non libero. Suspendisse ullamcorper porttitor blandit.',
-            'row2' => 'Curabitur aliquam urna ex, eget molestie nulla aliquet et. Phasellus at porttitor nulla, vel venenatis turpis. Integer tincidunt tortor id nunc viverra suscipit. Quisque sed imperdiet est, a laoreet lectus.',
+            'row1' => 'Witaj w dzienniku naszej podróży! Jesteśmy czworgiem przyjaciół, którzy poznali się kilka lat temu w trakcie studiów w Krakowie. Od 2014 roku (nie)regularnie podróżujemy (razem i osobno) i mimo, że mieszkaliśmy w różnych miejscach świata (Kraków, Warszawa, Lizbona, Amsterdam, Tokio), udało nam się utrzymać świetny kontakt i podtrzymać miłość do odkrywania na nowo miejsc już odkrytych.',
         ],
         'below_photo' => [
-            'row1' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada mattis dui volutpat auctor. Phasellus ligula ipsum, elementum sit amet pharetra nec, finibus non libero. Suspendisse ullamcorper porttitor blandit.',
-            'row2' => 'Curabitur aliquam urna ex, eget molestie nulla aliquet et. Phasellus at porttitor nulla, vel venenatis turpis. Integer tincidunt tortor id nunc viverra suscipit. Quisque sed imperdiet est, a laoreet lectus.',
+            'row1' => 'We wrześniu 2019 roku udało nam się zrealizować jeden z naszych najbardziej szalonych planów - kupiliśmy 11-metrowy jacht żaglowy, na którym zamierzamy mieszkać i pływać przez następny rok.',
+            'row2' => 'Decyzja o zmianie stylu życia poprzedzona była dwoma latami czasochłonnych przygotowań związanych zarówno ze znalezieniem odpowiedniej łódki, jak i poprawieniem naszych umiejętności. W tym roku planujemy wypłynąć z Burnham on Crouch (Wielka Brytania) i popłynąć na południe ku cieplejszej pogodzie.',
+            'row3' => 'Ta strona będzie naszym dziennikiem, sposobem na utrwalenie wspomnień i utwierdzenie rodziców w przekonaniu, że jesteśmy bezpieczni i dobrze się bawimy (Mamo, jest super!).',
+            'row4' => 'Dzięki za odwiedziny. Zapraszamy na pozostałe podstrony i na nasze profile społecznościowe.',
         ]
     ],
     'boat' => [

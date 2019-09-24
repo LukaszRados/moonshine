@@ -18,16 +18,19 @@
 </header>
 
 
-<div class='content content--spaced'>
+<div class='content content--spaced crew'>
+    <h2>{!! __('pages.crew.names') !!}</h2>
     @foreach (__('pages.crew.above_photo') as $row)
         <p>{{ $row }}</p>
     @endforeach
-
-    <img src='{{ asset('img/crew.jpg') }}' alt='{{ __('pages.crew.photo_alt') }}' class='content__photo'>
+    
+    <img src='{{ asset('img/crew.jpg') }}' alt='{{ __('pages.crew.photo_alt') }}' class='content__photo content__photo--crew'>
 
     @foreach (__('pages.crew.below_photo') as $row)
         <p>{{ $row }}</p>
     @endforeach
+
+
 </div>
 
 @endsection
