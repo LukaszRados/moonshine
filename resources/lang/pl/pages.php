@@ -7,12 +7,12 @@ return [
         'header' => [
             'yacht' => 'Jacht',
             'name' => 'Moonshine',
-            'body' => 'Grupa znajomych którzy postanowili zrobić sobie rok przerwy i żeglować po Europie na pokładzie 11-metrowego jachtu. Ta strona to nasz dziennik podróży, galeria zdjęć i sposób komunikacji z przyjaciółmi.',
+            'body' => 'Grupa przyjaciół, którzy postanowili zrobić sobie rok przerwy i żeglować po Europie na pokładzie 11-metrowego jachtu. Ta strona to nasz dziennik podróży, galeria zdjęć i sposób komunikacji ze znajomymi.',
         ],
         'crew' => [
             'header' => 'Załoga',
             'names' => 'Marta, Jola,<br>Wojtek i Łukasz',
-            'body' => 'Poznaliśmy się na studiach w Krakowie. Często wspólnie podróżowaliśmy, w tym żeglarsko. Kilka lat temu wpadliśmy na pomysł kupienia małego jachtu i popłynięcia w przygodę życia.',
+            'body' => 'Poznaliśmy się na studiach w Krakowie. Często wspólnie podróżowaliśmy, w tym żeglarsko. Kilka lat temu wpadliśmy na pomysł kupienia jachtu i popłynięcia w przygodę życia.',
             'link' => 'Więcej o załodze',
         ],
     ],
