@@ -19,3 +19,9 @@ Route::middleware('localisation.front')->prefix($locale)->group(function () {
 Route::get('login', 'Auth\LoginController@showLoginForm');
 Route::post('login', 'Auth\LoginController@login')->name('login');
 Route::post('logout', 'Auth\LoginController@login')->name('logout');
+
+Route::prefix('admin')->middleware('auth')->group(function () {
+    Route::get('/', function () {
+        return 'test';
+    });
+});

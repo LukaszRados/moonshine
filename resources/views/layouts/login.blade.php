@@ -7,7 +7,7 @@
 
         <title>Admin Panel</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel='stylesheet' href='{{ asset(mix('css/login.css')) }}'>
     </head>
 
