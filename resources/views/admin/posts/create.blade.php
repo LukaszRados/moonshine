@@ -27,7 +27,7 @@
     </div>
     <div class='form__field'>
         <label class='form__label' for='content'>Content (markdown)</label>
-        <textarea class='form__text' id='content' placeholder='You can drag and drop images here'></textarea>
+        <textarea class='form__text form__markdown js-uploader' id='content' placeholder='You can drag and drop images here'></textarea>
     </div>
     <div class='form__field'>
         <button class='button button--large'>
