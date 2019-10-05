@@ -7,12 +7,17 @@
 
         <title>Admin Panel</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel='stylesheet' href='{{ asset(mix('css/admin.css')) }}'>
     </head>
 
     <body>
-        @yield('body')
+        <div class='admin'>
+            @include('admin.partials.navigation')
+            <div class='content'>
+                @yield('body')
+            </div>
+        </div>
     </body>
 
     <script src='{{ asset(mix('js/admin.js')) }}' async></script>
