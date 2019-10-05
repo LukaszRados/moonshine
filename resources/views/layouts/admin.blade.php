@@ -7,14 +7,16 @@
 
         <title>Admin Panel</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700&display=swap&subset=latin-ext" rel="stylesheet">
         <link rel='stylesheet' href='{{ asset(mix('css/admin.css')) }}'>
     </head>
 
     <body>
-        <div class='admin'>
-            @include('admin.partials.navigation')
-            <div class='content'>
+        <div class='layout'>
+            <div class='layout__nav'>
+                @include('admin.partials.navigation')
+            </div>
+            <div class='layout__content'>
                 @yield('body')
             </div>
         </div>

@@ -20,6 +20,6 @@ Route::get('login', 'Auth\LoginController@showLoginForm');
 Route::post('login', 'Auth\LoginController@login')->name('login');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::prefix('admin')->middleware('auth')->group(function () {
+Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', 'Admin\DashboardController@index')->name('dashboard');
 });
