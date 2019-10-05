@@ -1,0 +1,21 @@
+.form__field {
+    margin: 15px 0 30px;
+}
+.form__label {
+    font-family: $font-secondary;
+    font-weight: bold;
+    font-size: .8em;
+    display: block;
+    margin: 0 0 5px;
+}
+.form__text {
+    border: 1px solid #dbdbdb;
+    font-family: $font-primary;
+    font-size: 1em;
+    padding: 8px 20px;
+    width: 100%;    
+}
+.form__text--large {
+    font-size: 1.2em;
+    padding: 12px 20px;
+}

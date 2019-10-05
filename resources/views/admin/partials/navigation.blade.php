@@ -9,7 +9,7 @@
         </li>
         <li class='navigation__separator'></li>
         <li>
-            <a href='#'>Blog</a>
+            <a href='{{ route('admin.posts.index') }}'>Blog</a>
         </li>
         <li>
             <a href='#'>Route</a>

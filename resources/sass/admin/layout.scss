@@ -5,13 +5,18 @@
         justify-content: space-between;
         max-width: 1400px;
         margin: 0 auto;
-        padding-top: 40px;
+        padding-top: 20px;
         width: 100%;
     }
     .layout__nav {
+        padding-top: 20px;
         width: 240px;
     }
     .layout__content {
+        background: #fff;
+        border-radius: 5px;
+        min-height: 400px;
+        padding: 40px;
         width: calc(100% - 270px);
     }
 }
