@@ -31,12 +31,22 @@
 }
 .navigation__logo {
     position: relative;
-    width: 40px;
+    width: 100px;
     z-index: 10;
+}
+.navigation__logo a {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 96px;
+    font-size: 0;
+    width: 100px;
 }
 .navigation__left,
 .navigation__right {
-    width: calc(50% - 20px);
+    width: calc(50% - 50px);
 }
 .navigation__right {
     text-align: right;
@@ -103,6 +113,20 @@
     }
     .navigation a:hover {
         opacity: .5;
+    }
+    .navigation__logo {
+        width: 150px;
+    }
+    .navigation__logo a {
+        height: 144px;
+        width: 150px;
+    }
+    .navigation__logo a:hover {
+        opacity: 1;
+    }
+    .navigation__left,
+    .navigation__right {
+        width: calc(50% - 75px);
     }
     .navigation__left {
         align-items: center;

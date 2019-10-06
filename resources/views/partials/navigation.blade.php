@@ -12,8 +12,8 @@
         @endif
     </div>
     <div class='navigation__logo'>
-        <a href='{{ route('home') }}'>
-            <img src='{{ asset('img/logo.png') }}' alt='Moonshine' width='40' height='28'>
+        <a href='{{ route('home') }}' style='background-image: url({{ asset('img/logo.png') }})'>
+            Moonshine
         </a>
     </div>
     <div class='navigation__right'>

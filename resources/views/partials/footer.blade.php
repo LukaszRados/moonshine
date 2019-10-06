@@ -1,5 +1,4 @@
 <footer class='footer'>
-    <img src='{{ asset('img/logo.png') }}' alt='Moonshine' class='footer__logo'>
     <ul class='footer__nav'>
         {{-- <li><a href='#' class='footer__item'>{{ __('navigation.blog') }}</a></li> --}}
         <li><a href='{{ route('crew') }}' class='footer__item'>{{ __('navigation.crew') }}</a></li>
