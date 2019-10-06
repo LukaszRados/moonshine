@@ -41,6 +41,11 @@ return [
             'row2' => 'Another priority is care about the environment. We have installed 180W solar panels connected to 300Ah batteries which provide us enough electricity to stay indendent of the shore. Victron inverter allows us to power our laptops and cameras. Wherever we sail we are using mostly sails to minimise usage of the diesel engine.',
         ]
     ],
+    'posts' => [
+        'title' => 'The Blog',
+        'description' => 'Welcome to our sailing blog. Read about our cruising adventure around Europe.',
+        'keywords' => 'yacht, sailing, sails, jeanneau, sun odyssey, cruising, cruser, sailing blog, sailing vlogs',
+    ],
     'contact' => [
         'title' => 'Contact us',
         'description' => 'Contact the crew of Moonshine Sailing Yacht.',

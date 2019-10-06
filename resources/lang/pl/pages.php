@@ -41,6 +41,11 @@ return [
             'row2' => 'Kolejnym priorytetem jest dla nas troska o środowisko naturalne. Jacht doposażamy w panele słoneczne o mocy 180W, które w połączeniu z 300Ah akumulatorami zapewniają nam niezależność na morzu. Inverter firmy Victron pozwala na zasialnie naszych laptopów i aparatów. Gdziekolwiek płyniemy, staramy się wykorzystywać żagle i minimalizować czas na silniku.',
         ]
     ],
+    'posts' => [
+        'title' => 'Blog',
+        'description' => 'Witamy na naszym żeglarskim blogu. Przeczytaj o tym jak żeglujemy dookoła Europy na pokładzie 11-metrowej łódki.',
+        'keywords' => 'jacht, żeglarstwo, blog żeglarski, vlog żeglarski, sailing, sails, jeanneau, sun odyssey, cruising',
+    ],
     'contact' => [
         'title' => 'Kontakt',
         'description' => 'Skontaktuj się z załogą jachtu Moonshine.',

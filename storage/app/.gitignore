@@ -1,3 +1,6 @@
 *
+!posts/
+!posts/*
+!posts/*/*
 !public/
 !.gitignore
