@@ -1,10 +1,27 @@
 title: Witaj świecie!
 published: "2019-10-03"
-body: |
-  ## Cześć kochani!
+body: 
+  -
+    type: markdown
+    content: |
+      ## Cześć kochani!
 
-  Jak się macie Ty wariacie!
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet diam eu arcu commodo fringilla. Vivamus consectetur venenatis urna nec suscipit. Vestibulum ut luctus lectus, ultricies hendrerit sapien. Nullam efficitur accumsan arcu eu aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat, quam sit amet iaculis tempus, dolor ipsum sodales augue, vitae tristique ligula leo et justo. Nulla ornare a nisl vitae convallis. Aliquam pretium porttitor eros, quis dignissim dui tincidunt dignissim. Nam placerat nibh imperdiet ligula sollicitudin, sed tempor purus placerat.
 
-  [To jest link](https://lukaszrados.pl)
+      [To jest link](https://lukaszrados.pl)
+  -
+    type: photo
+    alt: 'Moonshine from above'
+    src: moonshine.jpg
+  -
+    type: markdown
+    content: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet diam eu arcu commodo fringilla. Vivamus consectetur venenatis urna nec suscipit. Vestibulum ut luctus lectus, ultricies hendrerit sapien. Nullam efficitur accumsan arcu eu aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat, quam sit amet iaculis tempus, dolor ipsum sodales augue, vitae tristique ligula leo et justo. Nulla ornare a nisl vitae convallis. Aliquam pretium porttitor eros, quis dignissim dui tincidunt dignissim. Nam placerat nibh imperdiet ligula sollicitudin, sed tempor purus placerat.
 
-  Koniec.
+      * List element 1
+      * List element 2
+  -
+    type: video
+    src: https://www.youtube.com/watch?v=1Eljb9dP_Kg
+
+      

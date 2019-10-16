@@ -13,6 +13,7 @@ Route::middleware('localisation.front')->prefix($locale)->group(function () {
     Route::get('/', 'PagesController@index')->name('home');
     Route::get('/boat', 'PagesController@boat')->name('boat');
     Route::get('/crew', 'PagesController@crew')->name('crew');
+    Route::get('/blog/{slug}', 'PostsController@show')->name('posts.show');
     Route::get('/blog', 'PostsController@index')->name('posts.index');
     Route::get('/contact', 'PagesController@contact')->name('contact');
 });

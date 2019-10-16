@@ -18,7 +18,7 @@
 </header>
 
 @foreach ($posts as $post)
-    {{ $post['title'] }} <br>
+<a href='{{ route('posts.show', $post['slug']) }}'>{{ $post['title'] }}</a> <br>
 @endforeach
 
 @endsection
