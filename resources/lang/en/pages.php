@@ -45,6 +45,7 @@ return [
         'title' => 'The Blog',
         'description' => 'Welcome to our sailing blog. Read about our cruising adventure around Europe.',
         'keywords' => 'yacht, sailing, sails, jeanneau, sun odyssey, cruising, cruser, sailing blog, sailing vlogs',
+        'recent' => 'Recent entries',
     ],
     'contact' => [
         'title' => 'Contact us',

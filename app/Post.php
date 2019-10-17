@@ -17,6 +17,11 @@ class Post
         return asset('img/posts/' . $slug . '/bg.jpg');
     }
 
+    public static function getThumb ($slug)
+    {
+        return asset('img/posts/' . $slug . '/thumb.jpg');
+    }
+
     public static function all ()
     {
         try {
@@ -28,9 +33,10 @@ class Post
                 $slug = Post::getSlug($directory);
                 return [
                     'title' => $content['title'],
-                    'published' => $content['published'],
+                    'published_text' => $content['published_text'],
+                    'intro' => $content['intro'],
                     'slug' => $slug,
-                    'background' => self::getBackground($slug),
+                    'thumb' => self::getThumb($slug),
                 ];
             }, $posts);
             return $posts;

@@ -5,6 +5,7 @@ return [
     'page_title' => 'Sailing Yacht Moonshine',
     'page_title_shorter' => 's/y Moonshine',
     'yacht_name' => 'Moonshine',
+    'read_more' => 'Dowiedz się więcej',
     'specs' => [
         'header' => [
             'line_1' => 'Jeanneau',

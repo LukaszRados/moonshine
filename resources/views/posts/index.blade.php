@@ -6,7 +6,7 @@
 
 @section('body')
 
-<header class='hero' style='background-image: url({{ asset('img/blog.jpg') }})'>
+<header class='hero' style='background-image: url({{ asset('img/bg/blog.jpg') }})'>
     <div class='hero__navigation'>
         @include('partials.navigation')
     </div>
@@ -17,8 +17,26 @@
     <div class='hero__footer'></div>
 </header>
 
-@foreach ($posts as $post)
-<a href='{{ route('posts.show', $post['slug']) }}'>{{ $post['title'] }}</a> <br>
-@endforeach
+<div class='subheader'>
+    <h2>{{ __('pages.posts.recent') }}</h2>
+</div>
+
+<div class='posts'>
+    @foreach ($posts as $post)
+        <article class='post-thumb'>
+            <div class='post-thumb__photo'>
+                <a href='{{ route('posts.show', $post['slug']) }}'>
+                    <img src='{{ $post['thumb'] }}' alt='{{ $post['title'] }}'>
+                </a>
+            </div>
+            <div class='post-thumb__text'>
+                <p class='post-thumb__date'>{{ $post['published_text'] }}</p>
+                <h2><a href='{{ route('posts.show', $post['slug']) }}'>{{ $post['title'] }}</a></h2>
+                <p class='post-thumb__intro'>{{ $post['intro'] }}</p>
+                <p class='post-thumb__more'><a href='{{ route('posts.show', $post['slug']) }}'>{{ __('messages.read_more') }}</a></p>
+            </div>
+        </article>
+    @endforeach
+</div>
 
 @endsection

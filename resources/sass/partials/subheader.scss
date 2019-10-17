@@ -1,0 +1,15 @@
+.subheader {
+    margin: 40px 0;
+}
+.subheader h2 {
+    @include header;
+    font-size: .8em;
+    margin: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .subheader {
+        margin: 70px 0;
+    }
+}

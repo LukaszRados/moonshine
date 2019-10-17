@@ -1,0 +1,12 @@
+title: Nowy antyfouling - timelapse
+published: "2019-10-10"
+published_text: "10 października 2019"
+intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet diam eu arcu commodo fringilla.
+body: 
+  -
+    type: markdown
+    content: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet diam eu arcu commodo fringilla. Vivamus consectetur venenatis urna nec suscipit. Vestibulum ut luctus lectus, ultricies hendrerit sapien. 
+  -
+    type: video
+    src: https://www.youtube.com/watch?v=1Eljb9dP_Kg

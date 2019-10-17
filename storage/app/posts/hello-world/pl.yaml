@@ -1,6 +1,7 @@
 title: Witaj świecie!
 published: "2019-10-03"
 published_text: "3 października 2019"
+intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet diam eu arcu commodo fringilla.
 body: 
   -
     type: markdown

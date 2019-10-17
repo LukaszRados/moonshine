@@ -45,6 +45,7 @@ return [
         'title' => 'Blog',
         'description' => 'Witamy na naszym żeglarskim blogu. Przeczytaj o tym jak żeglujemy dookoła Europy na pokładzie 11-metrowej łódki.',
         'keywords' => 'jacht, żeglarstwo, blog żeglarski, vlog żeglarski, sailing, sails, jeanneau, sun odyssey, cruising',
+        'recent' => 'Najnowsze wpisy',
     ],
     'contact' => [
         'title' => 'Kontakt',
