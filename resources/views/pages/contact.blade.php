@@ -12,7 +12,7 @@
     </div>
     <div class='hero__content'>
         <p class='hero__intro'>{{ __('messages.page_title_shorter') }}</p>
-        <h1 class='hero__header'>{{ __('pages.contact.title') }}</h1>
+        <h1 class='hero__header hero__header--outline'>{{ __('pages.contact.title') }}</h1>
     </div>
     <div class='hero__footer'></div>
 </header>

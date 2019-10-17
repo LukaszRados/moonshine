@@ -1,0 +1,119 @@
+.post {
+    margin: 30px auto 50px;
+    max-width: 1200px;
+}
+
+/* Text */
+
+.post__text p {
+    font-family: $font-serif;
+    line-height: 1.7;
+    margin: 10px;
+}
+.post__text a {
+    @include underline;
+    color: $color-link;
+}
+.post__text h2 {
+    font-size: 1.4em;
+    font-family: $font-sans;
+    font-weight: bold;
+    margin: 30px 0 10px;
+}
+.post__text ul {
+    margin: 10px 0;
+}
+.post__text li {
+    font-family: $font-serif;
+    line-height: 1.7;
+}
+
+/* Photo */
+
+.post__photo {
+    margin: 30px 0;
+}
+.post__photo-placeholder {
+    background: #efefef;
+    height: 0;
+    position: relative;
+    width: 100%;
+}
+.post__photo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.post__photo-title {
+    color: #777;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: .9em;
+    margin: 10px 10px 0;
+}
+
+/* Video */
+
+.post__video {
+    margin: 30px 0;
+    position: relative;
+    width: 100%;
+}
+.post__video:after {
+    background: #efefef;
+    content: '';
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    width: 100%;
+}
+.post__video iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+    .post {
+        margin: 50px auto 75px;
+    }
+
+    /* Text */
+
+    .post__text {
+        max-width: 750px;
+        margin: 0 auto 20px;
+    }
+    .post__text p {
+        font-size: 1.1em;
+        margin: 20px 0;
+    }
+    .post__text li {
+        font-size: 1.1em;
+    }
+    .post__text h2 {
+        font-size: 1.6em;
+        margin: 40px 0 10px;
+    }
+
+    /* Photo */
+
+    .post__photo {
+        margin: 50px 0;
+    }
+    .post__photo-title {
+        max-width: 750px;
+        margin: 10px auto 0;
+    }
+
+    /* Video */
+
+    .post__video {
+        margin: 50px 0;
+    }
+}

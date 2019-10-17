@@ -18,7 +18,7 @@ class PostsController extends Controller
     public function show($slug)
     {
         $post = Post::get($slug);
-        dd($post);
+        // dd($post);
         return view('posts.show', [ 'post' => $post ]);
     }
 }

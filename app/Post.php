@@ -12,6 +12,11 @@ class Post
         return preg_split('/\//', $directory)[1];
     }
 
+    public static function getBackground ($slug)
+    {
+        return asset('img/posts/' . $slug . '/bg.jpg');
+    }
+
     public static function all ()
     {
         try {
@@ -20,10 +25,12 @@ class Post
             $posts = array_map(function ($directory) use ($locale) {
                 $filename = $directory . '/' . $locale . '.yaml';
                 $content = Yaml::parse(Storage::get($filename));
+                $slug = Post::getSlug($directory);
                 return [
                     'title' => $content['title'],
                     'published' => $content['published'],
-                    'slug' => Post::getSlug($directory),
+                    'slug' => $slug,
+                    'background' => self::getBackground($slug),
                 ];
             }, $posts);
             return $posts;
@@ -38,16 +45,28 @@ class Post
         $Parsedown->setMarkupEscaped(true);
         try {
             $locale = config()->get('locale');
-            $filename = 'posts/' . $slug . '/' . $locale . '.yaml';
+            $path = 'posts/' . $slug . '/';
+            $filename = $path . $locale . '.yaml';
             $post = Storage::get($filename);
             $content = Yaml::parse(Storage::get($filename));
-            $content['body'] = array_map(function ($element) use ($Parsedown) {
+            $content['body'] = array_map(function ($element) use ($Parsedown, $path) {
+                switch ($element['type']) {
+                    case 'markdown':
+                        $element['content'] = $Parsedown->text($element['content']);
+                    break;
+
+                    case 'photo':
+                        $element['src'] = asset('img/' . $path . $element['src']);
+                    break;
+                }
+                return $element;
                 if ($element['type'] === 'markdown') {
-                    $element['content'] = $Parsedown->text($element['content']);
-                } else {
+                    return $element;
+                } else if ($element['type']) {
                     return $element;
                 }
             }, $content['body']);
+            $content['background'] = self::getBackground($slug);
             return $content;
         } catch (ParseException $exception) {
             return [];

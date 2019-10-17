@@ -25,16 +25,23 @@
     font-style: italic;
     margin: 0;
 }
+.hero--post .hero__intro {
+    font-size: 1em;
+}
 .hero__header {
     color: #fff;
     font-family: $font-sans;
+    font-size: 1.4em;
+    margin: 10px 0 0;
+}
+.hero__header--outline {
     font-size: 1.8em;
     letter-spacing: 6px;
-    margin: 10px 0 0;
     text-transform: uppercase;
     -webkit-text-fill-color: $color-primary; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
+
 }
 .hero__body {
     color: #fff;
@@ -64,7 +71,13 @@
     .hero__intro {
         font-size: 1.4em;
     }
+    .hero--post .hero__intro {
+        font-size: 1.2em;
+    }
     .hero__header {
+        font-size: 2.6em;
+    }
+    .hero__header--outline {
         font-size: 3.2em;
     }
     .hero__footer {

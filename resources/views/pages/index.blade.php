@@ -11,7 +11,7 @@
     </div>
     <div class='hero__content'>
         <p class='hero__intro'>{{ __('pages.index.header.yacht') }}</p>
-        <h1 class='hero__header'>{{ __('pages.index.header.name') }}</h1>
+        <h1 class='hero__header hero__header--outline'>{{ __('pages.index.header.name') }}</h1>
         <p class='hero__body'>{{ __('pages.index.header.body') }}</p>
     </div>
     <div class='hero__footer'></div>
