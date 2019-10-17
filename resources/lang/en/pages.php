@@ -37,8 +37,8 @@ return [
         'description' => 'Meet our yacht - 1996 Jeanneau Sun Odyssey 36.2 - a 36 feet long cruiser that will be our home for the next year.',
         'keywords' => 'yacht, sailing, sails, jeanneau, sun odyssey, cruising, cruser',
         'content' => [
-            'row1' => 'Safety is one of the most important factors when considering a year long cruise. After purchasing the boat we have taken a number of actions to improve the comfort and safety of the yacht. We installed the equipment such as an EPIRB, a handheld VHF, a life raft, AIS and more.',
-            'row2' => 'We are trying to minimise our impact on the environment. We have 140W of solar panels and a Rutland wind generator that provide all the electricity we need. Since we don\'t have a tight schedule, we are able to rely mostly on the sails instead of using the engine.',
+            'row1' => 'Safety is one of the main concerns when planning a long term cruise. Since we purchased the boat we invested a lot into safety, adding important equipment such as life raft (Ocean Safety), AIS receiver, handheld VHF, new life vests and safety lines and EPIRb (with GPS).',
+            'row2' => 'Another priority is care about the environment. We have installed 180W solar panels connected to 300Ah batteries which provide us enough electricity to stay indendent of the shore. Victron inverter allows us to power our laptops and cameras. Wherever we sail we are using mostly sails to minimise usage of the diesel engine.',
         ]
     ],
     'contact' => [

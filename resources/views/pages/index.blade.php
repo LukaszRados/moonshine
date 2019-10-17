@@ -5,7 +5,7 @@
 
 @section('body')
 
-<header class='hero hero--full' style='background-image: url({{ asset('img/test.jpg') }})'>
+<header class='hero hero--full' style='background-image: url({{ asset('img/bg/index.jpg') }})'>
     <div class='hero__navigation'>
         @include('partials.navigation')
     </div>
