@@ -10,15 +10,14 @@ class PostsController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
-        // dd($posts);
+        $posts = Post::all()->reverse();
         return view('posts.index', [ 'posts' => $posts ]);
     }
 
     public function show($slug)
     {
         $post = Post::get($slug);
-        // dd($post);
-        return view('posts.show', [ 'post' => $post ]);
+        $previews = Post::previews($slug);
+        return view('posts.show', [ 'post' => $post, 'previews' => $previews ]);
     }
 }

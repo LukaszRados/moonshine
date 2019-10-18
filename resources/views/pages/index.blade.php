@@ -17,6 +17,8 @@
     <div class='hero__footer'></div>
 </header>
 
+@include('partials.recent_posts', [ 'posts' => $previews ])
+
 @include('partials.boat_specs', [ 'include_link' => 1 ])
 
 <div class='home-crew'>

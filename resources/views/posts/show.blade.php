@@ -40,4 +40,6 @@
     @endforeach
 </article>
 
+@include('partials.recent_posts', [ 'posts' => $previews ])
+
 @endsection

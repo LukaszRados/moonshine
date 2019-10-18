@@ -7,9 +7,15 @@ use Symfony\Component\Yaml\Yaml;
 
 class Post
 {
-    public static function getSlug ($directory)
+    public static function getSlugAndDate ($directory)
     {
-        return preg_split('/\//', $directory)[1];
+        $slugAndDate = preg_split('/\//', $directory)[1];
+        $separated = preg_split('/_/', $slugAndDate);
+        return [
+            'original' => $slugAndDate,
+            'date' => $separated[0],
+            'slug' => $separated[1],
+        ];
     }
 
     public static function getBackground ($slug)
@@ -22,55 +28,66 @@ class Post
         return asset('img/posts/' . $slug . '/thumb.jpg');
     }
 
+    public static function list ()
+    {
+        $posts = Storage::directories('posts');
+        return collect(array_map(function ($item) {
+            return self::getSlugAndDate($item);
+        }, $posts))->reverse();
+    }
+
     public static function all ()
     {
         try {
-            $posts = Storage::directories('posts'); 
+            $posts = Storage::directories('posts');
             $locale = config()->get('locale');
             $posts = array_map(function ($directory) use ($locale) {
                 $filename = $directory . '/' . $locale . '.yaml';
                 $content = Yaml::parse(Storage::get($filename));
-                $slug = Post::getSlug($directory);
+                $slugAndDate = Post::getSlugAndDate($directory);
                 return [
                     'title' => $content['title'],
+                    'published' => $slugAndDate['date'],
                     'published_text' => $content['published_text'],
                     'intro' => $content['intro'],
-                    'slug' => $slug,
-                    'thumb' => self::getThumb($slug),
+                    'slug' => $slugAndDate['slug'],
+                    'thumb' => self::getThumb($slugAndDate['slug']),
                 ];
             }, $posts);
-            return $posts;
+            return collect($posts);
         } catch (ParseException $exception) {
-            return [];
+            return collect([]);
         }
+    }
+
+    public static function previews ($exclude_slug = null)
+    {
+        $posts = self::list()->where('slug', '!=', $exclude_slug)->take(3);
+        $locale = config()->get('locale');
+        return $posts->map(function ($item) use ($locale) {
+            return Yaml::parse(Storage::get('posts/' . $item['original'] . '/' . $locale . '.yaml'));
+        });
     }
 
     public static function get ($slug)
     {
+        $post = self::list()->where('slug', $slug)->first();
         $Parsedown = new \Parsedown();
         $Parsedown->setMarkupEscaped(true);
         try {
             $locale = config()->get('locale');
-            $path = 'posts/' . $slug . '/';
-            $filename = $path . $locale . '.yaml';
-            $post = Storage::get($filename);
-            $content = Yaml::parse(Storage::get($filename));
-            $content['body'] = array_map(function ($element) use ($Parsedown, $path) {
+            $content = Yaml::parse(Storage::get('posts/' . $post['original'] . '/' . $locale . '.yaml'));
+            $content['body'] = array_map(function ($element) use ($Parsedown, $slug) {
                 switch ($element['type']) {
                     case 'markdown':
                         $element['content'] = $Parsedown->text($element['content']);
                     break;
 
                     case 'photo':
-                        $element['src'] = asset('img/' . $path . $element['src']);
+                        $element['src'] = asset('img/posts/' . $slug . '/' . $element['src']);
                     break;
                 }
                 return $element;
-                if ($element['type'] === 'markdown') {
-                    return $element;
-                } else if ($element['type']) {
-                    return $element;
-                }
             }, $content['body']);
             $content['background'] = self::getBackground($slug);
             return $content;
