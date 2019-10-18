@@ -17,7 +17,8 @@ class PostsController extends Controller
     public function show($slug)
     {
         $post = Post::get($slug);
-        $previews = Post::previews($slug);
-        return view('posts.show', [ 'post' => $post, 'previews' => $previews ]);
+        // $previews = Post::previews($slug);
+        // return view('posts.show', [ 'post' => $post, 'previews' => $previews ]);
+        return view('posts.show', [ 'post' => $post ]);
     }
 }

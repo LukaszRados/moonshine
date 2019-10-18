@@ -40,6 +40,8 @@
     @endforeach
 </article>
 
-@include('partials.recent_posts', [ 'posts' => $previews ])
+{{-- @if ($previews->count() > 2)
+    @include('partials.recent_posts', [ 'posts' => $previews, 'title' => __('pages.index.recent_posts') ])
+@endif --}}
 
 @endsection

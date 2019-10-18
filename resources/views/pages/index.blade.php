@@ -17,7 +17,9 @@
     <div class='hero__footer'></div>
 </header>
 
-@include('partials.recent_posts', [ 'posts' => $previews ])
+@if ($previews->count() !== 1)
+    @include('partials.recent_posts', [ 'posts' => $previews, 'title' => __('pages.index.recent_posts') ])
+@endif
 
 @include('partials.boat_specs', [ 'include_link' => 1 ])
 

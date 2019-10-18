@@ -15,6 +15,7 @@ return [
             'body' => 'Poznaliśmy się na studiach w Krakowie. Często wspólnie podróżowaliśmy, w tym żeglarsko. Kilka lat temu wpadliśmy na pomysł kupienia jachtu i popłynięcia w przygodę życia.',
             'link' => 'Więcej o załodze',
         ],
+        'recent_posts' => 'Nasz blog z podróży',
     ],
     'crew' => [
         'title' => 'Załoga',

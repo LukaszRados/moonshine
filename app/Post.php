@@ -65,7 +65,10 @@ class Post
         $posts = self::list()->where('slug', '!=', $exclude_slug)->take(3);
         $locale = config()->get('locale');
         return $posts->map(function ($item) use ($locale) {
-            return Yaml::parse(Storage::get('posts/' . $item['original'] . '/' . $locale . '.yaml'));
+            $content = Yaml::parse(Storage::get('posts/' . $item['original'] . '/' . $locale . '.yaml'));
+            $content['thumb'] = self::getThumb($item['slug']);
+            $content['slug'] = $item['slug'];
+            return $content;
         });
     }
 

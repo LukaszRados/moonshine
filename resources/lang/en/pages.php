@@ -15,6 +15,7 @@ return [
             'body' => 'We have met during studies in Kraków and we also started travelling together. Few years back we came up with an idea of buying a small sailing yacht and going for a once in the lifetime adventure.',
             'link' => 'More about the crew',
         ],
+        'recent_posts' => 'Our travel blog',
     ],
     'crew' => [
         'title' => 'The Crew',
