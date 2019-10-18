@@ -1,10 +1,24 @@
-title: Hello world!
-published: "2019-10-03"
-body: |
-  ## Hi all
+title: Hello world
+published_text: "18 października 2019"
+location: "Burnham on Crouch, United Kingdom"
+intro: Welcome to the first entry of our travel diary. Soon it is going to be filled with stories about living on board and sailing.
+body: 
+  -
+    type: markdown
+    content: |
+      Welcome to our travel blog. This where (soon) you are going to find up-to-date info about our journey and about living on board a yacht. We will also publish lots of photos and videos. Keep coming back - soon we will add first articles.
 
-  How are you?
+      At the moment s/y Moonshine is already back in the water after over a month offshore. It is the final stage of the repairs but we still have lots of things to do.
 
-  [This is a link](https://lukaszrados.pl)
+      Broken so far:
 
-  The End.
+      * raw water pump cover plate (fixed already)
+      * tea/coffee maker (new one is made of metal)
+      * tons of spares incorrectly ordered and returned
+
+      Make sure to follow us in social media:
+
+      * [@sailingmoonshine on Instagram](https://instagram.com/sailingmoonshine)
+      * [Sailing Moonshine on Facebook](https://www.facebook.com/sailingmoonshine/)
+      * YouTube channel coming soon!
+  -

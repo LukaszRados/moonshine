@@ -78,6 +78,17 @@
     width: 100%;
 }
 
+/* Published */
+
+.post__posted {
+    color: #777;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: 1em;
+    margin: 30px 10px;
+    line-height: 1.7;
+}
+
 @media screen and (min-width: 750px) {
     .post {
         margin: 50px auto 75px;
@@ -115,5 +126,12 @@
 
     .post__video {
         margin: 50px 0;
+    }
+
+    /* Published */
+    
+    .post__posted {
+        max-width: 750px;
+        margin: 50px auto 20px;
     }
 }

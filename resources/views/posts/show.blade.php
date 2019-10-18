@@ -38,6 +38,7 @@
             </div>
         @endif
     @endforeach
+    <p class='post__posted'>{{ $post['location'] }}, {{ $post['published_text'] }}</p>
 </article>
 
 {{-- @if ($previews->count() > 2)

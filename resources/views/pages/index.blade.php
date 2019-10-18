@@ -17,7 +17,7 @@
     <div class='hero__footer'></div>
 </header>
 
-@if ($previews->count() !== 1)
+@if ($previews->count() > 0)
     @include('partials.recent_posts', [ 'posts' => $previews, 'title' => __('pages.index.recent_posts') ])
 @endif
 
