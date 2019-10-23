@@ -1,0 +1,48 @@
+.map-wrapper {
+    background: #efefef;
+    display: block;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+.map-wrapper:after {
+    content: '';
+    display: block;
+    height: 100vh;
+    width: 100%;
+}
+.map {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.map__info {
+    padding: 15px;
+    width: 250px;
+}
+.map__info h4 {
+    font-family: $font-sans;
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+.map__info p {
+    font-family: $font-sans;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media screen and (min-width: 900px) {
+    .map-wrapper {
+        margin-bottom: 60px;
+    }
+    .map-wrapper:after {
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    .map__info {
+        width: 330px;
+    }
+}

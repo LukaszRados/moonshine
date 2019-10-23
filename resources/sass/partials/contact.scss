@@ -10,6 +10,9 @@
 .contact__head {
     margin-bottom: 40px;
 }
+.contact--no-margin .contact__head {
+    margin-bottom: 0;
+}
 .contact__position-header {
     @include header;
     font-size: .6em;
