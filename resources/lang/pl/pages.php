@@ -42,6 +42,11 @@ return [
             'row2' => 'Kolejnym priorytetem jest dla nas troska o środowisko naturalne. Jacht doposażamy w panele słoneczne o mocy 180W, które w połączeniu z 300Ah akumulatorami zapewniają nam niezależność na morzu. Inverter firmy Victron pozwala na zasialnie naszych laptopów i aparatów. Gdziekolwiek płyniemy, staramy się wykorzystywać żagle i minimalizować czas na silniku.',
         ]
     ],
+    'route' => [
+        'title' => 'Trasa',
+        'description' => 'Aktualizowana na bieżąco trasa jachtu Moonshine w podróży dookoła Europy',
+        'keywords' => 'jacht, trasa, dziennik jachtowy, jeanneau, sun oddyssey, cruising',
+    ],
     'posts' => [
         'title' => 'Blog',
         'description' => 'Witamy na naszym żeglarskim blogu. Przeczytaj o tym jak żeglujemy dookoła Europy na pokładzie 11-metrowej łódki.',
@@ -58,7 +63,8 @@ return [
             'position' => '51&deg;37&quot;12\' N, 0&deg;48&quot;11\' E',
             'city' => 'Burnham on Crouch, Wielka Brytania',
             'last_updated' => 'Ostatnia aktualizacja',
-            'date' => '23 września 2019',
+            'date' => '25 października 2019',
+            'see_map' => 'Zobacz na mapie',
         ],
         'visit_us' => [
             'header' => 'Odwiedź nas na pokładzie',

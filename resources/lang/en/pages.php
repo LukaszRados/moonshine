@@ -42,6 +42,11 @@ return [
             'row2' => 'Another priority is care about the environment. We have installed 180W solar panels connected to 300Ah batteries which provide us enough electricity to stay indendent of the shore. Victron inverter allows us to power our laptops and cameras. Wherever we sail we are using mostly sails to minimise usage of the diesel engine.',
         ]
     ],
+    'route' => [
+        'title' => 'The Route',
+        'description' => 'Regularly updated route around Europe on board Moonshine',
+        'keywords' => 'yacht, route, passage planning, log, jeanneau, sun oddyssey, cruising',
+    ],
     'posts' => [
         'title' => 'The Blog',
         'description' => 'Welcome to our sailing blog. Read about our cruising adventure around Europe.',
@@ -58,7 +63,8 @@ return [
             'position' => '51&deg;37&quot;12\' N, 0&deg;48&quot;11\' E',
             'city' => 'Burnham on Crouch, United Kingdom',
             'last_updated' => 'Last updated',
-            'date' => 'September 23, 2019',
+            'date' => 'October 25, 2019',
+            'see_map' => 'See on a map',
         ],
         'visit_us' => [
             'header' => 'Visit us on board',

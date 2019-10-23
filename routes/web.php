@@ -15,5 +15,6 @@ Route::middleware('localisation.front')->prefix($locale)->group(function () {
     Route::get('/crew', 'PagesController@crew')->name('crew');
     Route::get('/blog/{slug}', 'PostsController@show')->name('posts.show');
     Route::get('/blog', 'PostsController@index')->name('posts.index');
+    Route::get('/route', 'PagesController@route')->name('route');
     Route::get('/contact', 'PagesController@contact')->name('contact');
 });

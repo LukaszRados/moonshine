@@ -24,6 +24,11 @@ class PagesController extends Controller
         return view('pages.boat');
     }
     
+    public function route()
+    {
+        return view('pages.route');
+    }
+    
     public function contact()
     {
         return view('pages.contact');

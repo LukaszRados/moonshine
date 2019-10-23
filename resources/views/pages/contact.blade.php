@@ -26,7 +26,7 @@
         </p>
         <p class='contact__position-updated'>
             {{ __('pages.contact.position.last_updated') }}: {{ __('pages.contact.position.date') }}.
-            {{-- <a href='#'>See on a map</a> --}}
+            <a href='{{ route('route') }}'>{{ __('pages.contact.position.see_map') }}</a>
         </p>
     </div>
 
