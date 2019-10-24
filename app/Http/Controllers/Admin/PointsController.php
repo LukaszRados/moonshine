@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class PostsController extends Controller
+class PointsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('admin.posts.index');
+        return view('admin.points.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.create');
+        return view('admin.points.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
