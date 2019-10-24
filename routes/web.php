@@ -18,3 +18,12 @@ Route::middleware('localisation.front')->prefix($locale)->group(function () {
     Route::get('/route', 'PagesController@route')->name('route');
     Route::get('/contact', 'PagesController@contact')->name('contact');
 });
+
+Route::get('login', 'Auth\LoginController@showLoginForm');
+Route::post('login', 'Auth\LoginController@login')->name('login');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
+    Route::get('/', 'Admin\DashboardController@index')->name('dashboard');
+    Route::resource('posts', 'Admin\PostsController');
+});
