@@ -78,5 +78,5 @@ window.points = [
 ];
 </script>
 <script src='{{ asset(mix('js/map.js')) }}'></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGUKhj1aFQR2uLkaztG3JpyP5nmmrSuDI&callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_KEY') }}&callback=initMap" async defer></script>
 @endsection
