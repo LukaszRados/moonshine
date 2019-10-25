@@ -19,11 +19,23 @@
     <h2>Coordinates</h2>
     <div class='form__field'>
         <label class='form__label' for='lat'>* Latitude</label>
-        <input name='lat' type='text' class='form__text' id='lat' value='{{ $point->lat }}' required>
+        <div class='js-coordinates'>
+            <input name='lat_degrees' type='text' class='form__text form__text--number' value='{{ $lat['degrees'] }}' placeholder='00' id='lat_degrees' required> &deg;
+            <input name='lat_minutes' type='text' class='form__text form__text--number' value='{{ $lat['minutes'] }}' placeholder='00' required> &acute;
+            <input name='lat_seconds' type='text' class='form__text form__text--number' value='{{ $lat['seconds'] }}' placeholder='000'>
+            <input name='lat_direction' type='text' class='form__text form__text--number' placeholder='N/S' value='{{ $lat['direction'] }}'>
+            <input name='lat' type='hidden' class='js-result' value='{{ $point->lat }}'>
+        </div>
     </div>
     <div class='form__field'>
         <label class='form__label' for='lng'>* Longitude</label>
-        <input name='lng' type='text' class='form__text' id='lng' value='{{ $point->lng }}' required>
+        <div class='js-coordinates'>
+            <input name='lng_degrees' type='text' class='form__text form__text--number' value='{{ $lng['degrees'] }}' placeholder='000' id='lng_degrees' required> &deg;
+            <input name='lng_minutes' type='text' class='form__text form__text--number' value='{{ $lng['minutes'] }}' placeholder='00' required> &acute;
+            <input name='lng_seconds' type='text' class='form__text form__text--number' value='{{ $lng['seconds'] }}' placeholder='000'>
+            <input name='lng_direction' type='text' class='form__text form__text--number' placeholder='N/S' value='{{ $lng['direction'] }}'>
+            <input name='lng' type='hidden' class='js-result' value='{{ $point->lng }}'>
+        </div>
     </div>
     {{-- <h2>Point description</h2>
     <div class='form__field'>

@@ -66,7 +66,9 @@ class PointsController extends Controller
     public function edit($id)
     {
         $point = Point::where('id', $id)->firstOrFail();
-        return view('admin.points.edit', [ 'point' => $point ]);
+        $lat = Point::getLatParts($point->lat);
+        $lng = Point::getLngParts($point->lng);
+        return view('admin.points.edit', [ 'point' => $point, 'lat' => $lat, 'lng' => $lng ]);
     }
 
     /**
