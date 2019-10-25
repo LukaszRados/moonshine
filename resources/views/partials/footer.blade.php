@@ -3,7 +3,7 @@
         <li><a href='{{ route('posts.index') }}' class='footer__item'>{{ __('navigation.blog') }}</a></li>
         <li><a href='{{ route('crew') }}' class='footer__item'>{{ __('navigation.crew') }}</a></li>
         <li><a href='{{ route('boat') }}' class='footer__item'>{{ __('navigation.boat') }}</a></li>
-        {{-- <li><a href='#' class='footer__item'>{{ __('navigation.route') }}</a></li> --}}
+        <li><a href='{{ route('route') }}' class='footer__item'>{{ __('navigation.route') }}</a></li>
         <li><a href='{{ route('contact') }}' class='footer__item'>{{ __('navigation.contact') }}</a></li>
     </ul>
     <ul class='footer__nav footer__nav-social'>

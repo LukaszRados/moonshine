@@ -24,7 +24,7 @@
             <li><a href='{{ route('posts.index') }}'>{{ __('navigation.blog') }}</a></li>
             <li><a href='{{ route('crew') }}'>{{ __('navigation.crew') }}</a></li>
             <li><a href='{{ route('boat') }}'>{{ __('navigation.boat') }}</a></li>
-            {{-- <li><a href='#'>{{ __('navigation.route') }}</a></li> --}}
+            <li><a href='{{ route('route') }}'>{{ __('navigation.route') }}</a></li>
             <li><a href='{{ route('contact') }}'>{{ __('navigation.contact') }}</a></li>
         </ul>
     </div>

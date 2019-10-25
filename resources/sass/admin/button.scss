@@ -1,0 +1,32 @@
+.button {
+    background: $color-primary;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-secondary;
+    font-size: .8em;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: background .2s linear;
+}
+.button:hover {
+    background: darken($color-primary, 10%);
+}
+.button--large {
+    padding: 12px 28px;
+}
+.button--secondary {
+    background: #dfe6e9;
+    color: #000;
+}
+.button--secondary:hover {
+    background: #b2bec3;
+}
+.button--danger {
+    background: #e74c3c;
+}
+.button--danger:hover {
+    background: #c0392b;
+}
