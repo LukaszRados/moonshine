@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Point;
+
 class PointsController extends Controller
 {
     /**
@@ -14,7 +16,8 @@ class PointsController extends Controller
      */
     public function index()
     {
-        return view('admin.points.index');
+        $points = Point::orderBy('created_at', 'DESC')->get();
+        return view('admin.points.index', [ 'points' => $points ]);
     }
 
     /**
@@ -35,7 +38,12 @@ class PointsController extends Controller
      */
     public function store(Request $request)
     {
-        
+        $point = new Point();
+        $point->lat = (float)$request->input('lat');
+        $point->lng = (float)$request->input('lng');
+        $point->save();
+
+        return redirect()->route('admin.points.create')->with('status', 'Point (' . $point->lat . ', ' . $point->lng . ') added');
     }
 
     /**
@@ -57,7 +65,8 @@ class PointsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $point = Point::where('id', $id)->firstOrFail();
+        return view('admin.points.edit', [ 'point' => $point ]);
     }
 
     /**
@@ -69,7 +78,12 @@ class PointsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $point = Point::where('id', $id)->firstOrFail();
+        $point->lat = (float)$request->input('lat');
+        $point->lng = (float)$request->input('lng');
+        $point->save();
+
+        return redirect()->route('admin.points.index')->with('status', 'Point (' . $point->lat . ', ' . $point->lng . ') updated.');
     }
 
     /**
@@ -80,6 +94,7 @@ class PointsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Point::destroy($id);
+        return redirect()->route('admin.points.index')->with('status', 'Point removed.');
     }
 }

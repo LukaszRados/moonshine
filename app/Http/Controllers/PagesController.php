@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Post;
+use App\Point;
 
 class PagesController extends Controller
 {
@@ -26,11 +27,16 @@ class PagesController extends Controller
     
     public function route()
     {
-        return view('pages.route');
+        $points = Point::orderBy('created_at', 'ASC')->get();
+        $currentPosition = $points[$points->count() - 1];
+        $coordinates = Point::convertToDegrees($currentPosition->lat, $currentPosition->lng);
+        return view('pages.route', [ 'points' => $points, 'current_position' => $currentPosition, 'coordinates' => $coordinates ]);
     }
     
     public function contact()
     {
-        return view('pages.contact');
+        $currentPosition = Point::orderBy('created_at', 'DESC')->first();
+        $coordinates = Point::convertToDegrees($currentPosition->lat, $currentPosition->lng);
+        return view('pages.contact', [ 'current_position' => $currentPosition, 'coordinates' => $coordinates ]);
     }
 }

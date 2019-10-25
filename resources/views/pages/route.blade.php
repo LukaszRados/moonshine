@@ -21,61 +21,30 @@
     <div class='contact__head'>
         <h2 class='contact__position-header'>{{ __('pages.contact.position.header') }}</h2>
         <p class='contact__position-current'>
-            {!! __('pages.contact.position.position') !!}<br>
+            {{ $coordinates }}<br>
             {{ __('pages.contact.position.city') }}
         </p>
         <p class='contact__position-updated'>
-            {{ __('pages.contact.position.last_updated') }}: {{ __('pages.contact.position.date') }}.
+            {{ __('pages.contact.position.last_updated') }}: {{ date('Y-m-d, H:m', strtotime($current_position->created_at)) }}.
         </p>
     </div>
 </div>
 
 <div class='map-wrapper'>
-    <div class='map js-map' data-marker='{{ asset('img/marker.png') }}' data-marker-small='{{ asset('img/marker_small.png') }}'></div>
+    <div
+        class='map js-map'
+        data-marker='{{ asset('img/marker.png') }}'
+        data-marker-small='{{ asset('img/marker_small.png') }}'
+        data-current-location-date='{{ date('Y-m-d, H:m', strtotime($current_position->created_at)) }}'
+        data-current-location-place='{{ __('pages.contact.position.city') }}'
+    ></div>
 </div>
 
 @endsection
 
 @section('javascript')
 <script>
-window.points = [
-    { 
-        lat: 51.624999, 
-        lng: 0.804172, 
-        options: {
-            title: 'Burnham on Crouch',
-            text: 'Kupno i remont jachtu',
-        }
-    },
-    {
-        lat: 51.626757,
-        lng: 0.968287,
-    },
-    {
-        lat: 51.378313, 
-        lng: 1.497771,
-    },
-    {
-        lat: 51.326830, 
-        lng: 1.432350,
-    },
-    {
-        lat: 51.155182, 
-        lng: 1.423848,
-    },
-    {
-        lat: 51.118039, 
-        lng: 1.324246,
-    },
-    {
-        lat: 50.728990, 
-        lng: 1.592186,
-        options: {
-            title: 'Aktualna pozycja',
-            text: 'Boulogne-sur-Mer, Francja'
-        }
-    },
-];
+    window.points = @json($points);
 </script>
 <script src='{{ asset(mix('js/map.js')) }}'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_KEY') }}&callback=initMap" async defer></script>

@@ -41,6 +41,12 @@ const initMap = () => {
             scaledSize: new google.maps.Size(36, 36),
         }
     })
+    if (!currentPosition.options) {
+        currentPosition.options = {
+            title: mapDomElement.dataset.currentLocationPlace,
+            text: mapDomElement.dataset.currentLocationDate,
+        }
+    }
     const infoWindow = generateInfoWindow(currentPosition)
     attachEventToMarker(map, marker, infoWindow)
     

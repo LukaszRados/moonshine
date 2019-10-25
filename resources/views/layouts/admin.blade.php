@@ -20,6 +20,9 @@
                 @yield('body')
             </div>
         </div>
+        @if (session('status'))
+            <div class='alert'>{{ session('status') }}</div>
+        @endif
     </body>
 
     <script src='{{ asset(mix('js/admin.js')) }}' async></script>
