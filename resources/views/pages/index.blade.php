@@ -3,9 +3,13 @@
 @section('meta.description') {{ __('pages.index.description') }} @stop
 @section('meta.keywords') {{ __('pages.index.keywords') }} @stop
 
+@section('css')
+    @include('partials.background_css', ['page' => 'home'])
+@endsection
+
 @section('body')
 
-<header class='hero hero--full' style='background-image: url({{ asset('img/bg/index.jpg') }})'>
+<header class='hero hero--full'>
     <div class='hero__navigation'>
         @include('partials.navigation')
     </div>

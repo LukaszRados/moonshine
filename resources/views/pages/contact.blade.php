@@ -4,9 +4,13 @@
 @section('meta.description') {{ __('pages.contact.description') }} @stop
 @section('meta.keywords') {{ __('pages.contact.keywords') }} @stop
 
+@section('css')
+    @include('partials.background_css', ['page' => 'contact'])
+@endsection
+
 @section('body')
 
-<header class='hero' style='background-image: url({{ asset('img/bg/contact.jpg') }})'>
+<header class='hero'>
     <div class='hero__navigation'>
         @include('partials.navigation')
     </div>

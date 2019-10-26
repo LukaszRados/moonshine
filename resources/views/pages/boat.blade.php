@@ -4,9 +4,13 @@
 @section('meta.description') {{ __('pages.boat.description') }} @stop
 @section('meta.keywords') {{ __('pages.boat.keywords') }} @stop
 
+@section('css')
+    @include('partials.background_css', ['page' => 'boat'])
+@endsection
+
 @section('body')
 
-<header class='hero' style='background-image: url({{ asset('img/bg/boat.jpg') }})'>
+<header class='hero'>
     <div class='hero__navigation'>
         @include('partials.navigation')
     </div>

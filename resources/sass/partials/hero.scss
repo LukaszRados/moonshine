@@ -34,15 +34,6 @@
     font-size: 1.4em;
     margin: 10px 0 0;
 }
-.hero__header--outline {
-    font-size: 1.8em;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-    -webkit-text-fill-color: $color-primary; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff;
-
-}
 .hero__body {
     color: #fff;
     font-family: $font-serif;
@@ -61,8 +52,6 @@
 }
 @media screen and (min-width: 900px) {
     .hero {
-        background-position: right center;
-        background-size: 50% auto;
         min-height: 500px;
     }
     .hero--full {

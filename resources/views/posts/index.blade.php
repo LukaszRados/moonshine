@@ -4,9 +4,22 @@
 @section('meta.description') {{ __('pages.posts.description') }} @stop
 @section('meta.keywords') {{ __('pages.posts.keywords') }} @stop
 
+@section('css')
+<style type='text/css'>
+    .hero {
+        background-image: url({{ asset('img/bg/blog.jpg') }})
+    }
+    @media screen and (min-width: 700px) {
+        .hero {
+            background-image: url({{ asset('img/bg/blog.jpg') }})
+        }
+    }
+</style>
+@endsection
+
 @section('body')
 
-<header class='hero' style='background-image: url({{ asset('img/bg/blog.jpg') }})'>
+<header class='hero'>
     <div class='hero__navigation'>
         @include('partials.navigation')
     </div>
