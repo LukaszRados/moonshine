@@ -60,10 +60,8 @@ return [
         'email' => 'moonshineyacht@gmail.com',
         'position' => [
             'header' => 'Current position',
-            'position' => '51&deg;37&quot;12\' N, 0&deg;48&quot;11\' E',
-            'city' => 'Burnham on Crouch, United Kingdom',
+            'city' => 'Dover, United Kingdom',
             'last_updated' => 'Last updated',
-            'date' => 'October 25, 2019',
             'see_map' => 'See on a map',
         ],
         'visit_us' => [

@@ -2,5 +2,8 @@
 !posts/
 !posts/*
 !posts/*/*
+!variables/
+!variables/*
+!variables/*/*
 !public/
 !.gitignore
