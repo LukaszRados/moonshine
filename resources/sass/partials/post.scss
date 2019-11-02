@@ -31,7 +31,8 @@
 /* Photo */
 
 .post__photo {
-    margin: 30px 0;
+    margin: 30px auto;
+    max-width: 1000px;
 }
 .post__photo-placeholder {
     background: #efefef;
@@ -115,7 +116,7 @@
     /* Photo */
 
     .post__photo {
-        margin: 50px 0;
+        margin: 50px auto;
     }
     .post__photo-title {
         max-width: 750px;

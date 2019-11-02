@@ -23,6 +23,11 @@ class Post
         return asset('img/posts/' . $slug . '/bg.jpg');
     }
 
+    public static function getFbCover ($slug)
+    {
+        return asset('img/posts/' . $slug . '/fb.jpg');
+    }
+
     public static function getThumb ($slug)
     {
         return asset('img/posts/' . $slug . '/thumb.jpg');
@@ -93,6 +98,7 @@ class Post
                 return $element;
             }, $content['body']);
             $content['background'] = self::getBackground($slug);
+            $content['facebook'] = self::getFbCover($slug);
             return $content;
         } catch (ParseException $exception) {
             return [];

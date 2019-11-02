@@ -3,6 +3,7 @@
 @section('meta.title') {{ $post['title'] }} - {{ __('pages.posts.title') }} - @stop
 @section('meta.description') {{ __('pages.posts.description') }} @stop
 @section('meta.keywords') {{ __('pages.posts.keywords') }} @stop
+@section('meta.facebook.image'){{ $post['facebook'] }} @stop
 
 @section('body')
 

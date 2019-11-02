@@ -60,7 +60,7 @@ return [
         'email' => 'moonshineyacht@gmail.com',
         'position' => [
             'header' => 'Current position',
-            'city' => 'Dover, United Kingdom',
+            'city' => 'Boulogne-sur-Mer, France',
             'last_updated' => 'Last updated',
             'see_map' => 'See on a map',
         ],
