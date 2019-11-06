@@ -46,14 +46,14 @@ class Point extends Model
     public static function convertLat ($lat)
     {
         $converted = self::convertFloatToParts($lat);
-        $direction = $converted['degrees'] >= 0 ? 'N' : 'S';
+        $direction = $converted['direction'] ? 'N' : 'S';
         return sprintf('%02d', $converted['degrees']) . '°' . sprintf('%02d', $converted['minutes']) . "." . sprintf('%03d', $converted['seconds']) . '\' ' . $direction; 
     }
 
     public static function convertLng ($lng)
     { //sprintf("%06d", $sum)
         $converted = self::convertFloatToParts($lng);
-        $direction = $converted['degrees'] >= 0 ? 'E' : 'W';
+        $direction = $converted['direction'] ? 'E' : 'W';
         return sprintf('%03d', $converted['degrees']) . '°' . sprintf('%02d', $converted['minutes']) . "." . sprintf('%03d', $converted['seconds']) . '\' ' . $direction; 
     }
 

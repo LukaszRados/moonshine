@@ -25,7 +25,7 @@ const initMap = () => {
     /* Initialise map */
     
     const map = new google.maps.Map(mapDomElement, {
-        zoom: 9, 
+        zoom: 7, 
         center: currentPosition,
     })
 
