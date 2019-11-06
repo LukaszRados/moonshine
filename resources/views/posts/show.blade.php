@@ -26,8 +26,16 @@
             </div>
         @elseif ($element['type'] === 'photo')
             <div class='post__photo'>
-                <div class='post__photo-placeholder' style='padding-bottom: {{ $element['aspect_ratio'] }}%'>
-                    <img src='{{ $element['src'] }}' alt='{{ $element['alt'] }}'>
+                <div
+                    class='post__photo-placeholder'
+                    style='padding-bottom: {{ $element['aspect_ratio'] }}%'
+                >
+                    <img
+                        src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVQYV2NgYAAAAAMAAWgmWQ0AAAAASUVORK5CYII='
+                        alt='{{ $element['alt'] }}'
+                        class='js-lazy-photo'
+                        data-src='{{ $element['src'] }}'
+                    >
                 </div>
                 @if (array_key_exists('title', $element))
                     <p class='post__photo-title'>{{ $element['title'] }}</p>
@@ -46,4 +54,8 @@
     @include('partials.recent_posts', [ 'posts' => $previews, 'title' => __('pages.index.recent_posts') ])
 @endif --}}
 
+@endsection
+
+@section('javascript')
+<script src='{{ asset(mix('js/blog.js')) }}'></script>
 @endsection
