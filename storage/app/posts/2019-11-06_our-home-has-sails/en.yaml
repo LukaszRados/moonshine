@@ -1,0 +1,120 @@
+title: 'Adulthood: you are doing it wrong. Our home has an engine and sails!'
+published_text: "November 06, 2019"
+location: "Cherbourg, France"
+intro: 'Sailing is just fixing your boat in exotic locations.'
+body: 
+  -
+    type: markdown
+    content: |
+      The day we first sat in the saloon we couldn’t believe we have actually made it. Sure, last two years were full of planning, preparations and boat viewings. It seemed like we were prepared for lifestyle change. Still, it was hard to believe we were drinking a tea on OUR boat. 
+
+      The beginnings were slow and required lots of formalities and paperwork. Moving out of Amsterdam and Warsaw, registering the boat and radio in Polish registries, signing the agreement, creating the bank account and many more. Short visit at home and after two weeks we flew to Burnham on Crouch in England, which became our home for the next 32 days.
+  -
+    type: photo
+    src: burnham-on-crouch.jpg
+    alt: Burnham-on-Crouch
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      The most important task was to learn how our new home works. Owning a boat is different from renting in one crucial way: if something breaks, you have to find out what it is and how to fix it (or pay someone else loads of money to do it for you). A boat is a combination of a house and a car and sails in addition. It gets even more complicated, if you have never owned a car or a house. Equipped with a little bit of knowledge, lots of enthusiasm, Don Casey’s "Sailboat maintenance manual" and internet access, we got down to work.
+  -
+    type: markdown
+    content: |
+      ## Fantastic Fuses and Where to Find Them
+
+      Before the purchase, our yacht was thoroughly surveyed. A hired professional created a report, which listed everything that should have been replaced or fixed. Each of them had priority assigned, and in the meantime we were adding next points to the list.
+
+      For the first month the boat was offshore which allowed us to put new antifouling and replace corroded anodes. And thanks to our guest Mikołaj, we replaced old and dangerous valves. 
+  -
+    type: photo
+    src: valves.jpg
+    alt: Replacing Valves on Moonshine
+    title: 'Mikołaj with a corroded valve that he has just removed. In case of failure, this valve could sink our boat in minutes.'
+    aspect_ratio: 75
+  -
+    type: photo
+    src: antifouling.jpg
+    alt: Paiting a new antifouling
+    title: 'Jola working on new antifouling.'
+    aspect_ratio: 66.666
+  -
+    type: photo
+    src: anodes-2.jpg
+    alt: Replacing anodes
+    title: 'Łukasz replacing the anodes.'
+    aspect_ratio: 66.666
+  -
+    type: photo
+    src: anodes.jpg
+    alt: 'Comparison of the old and the new one'
+    title: 'Before and after: comparison of the new anode and the old one'
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      The most time-consuming process was understanding the boat’s electrics (it is an ongoing process that will probably never end). Our peculiar work was Sherlock-Holmes-like: for over two weeks we were investigating the case of a “dying fridge”. The fridge was too greedy and refused to work, if anything else was plugged in. Luckily, Marta and Wojtek found a deeply hidden and - of course - blown fuse. Once it got replaced and our voltmeter started showing 13.6V we were cheering like kids.
+  -
+    type: photo
+    src: mast.jpg
+    alt: Working on a mast
+    title: 'Wojtek working on a mast to find out why our wind instrument shows nothing.'
+    aspect_ratio: 75
+  -
+    type: markdown
+    content: |
+      ## The Curious Case of a Diesel Engine
+
+      It is quite surprising how much time we have spent fixing the part we hope to use the least: the engine. Hidden beneath the stairs Yanmar 3GM30F is in decent condition despite almost 30 years of service. It requires regular servicing and (a bit of) patience. And knowledge we weren't lucky to have.
+
+      Before we even got our hands dirty, Marta and Łukasz attended a diesel engine maintenance course in North Fambridge. During the course Colin has taught them a lot and gave them skills needed to prevent the engine from breaking.
+
+      Feeling confident after the course and equipped with books and notes they got to work. First task was to change the impeller - a simple and routine job. The access to the impeller in our engine is just dreadful, but after few minutes of struggle we managed to replace it (just in time, as the old one was worn already). It couldn't be too easy though. Literally seconds after Łukasz said “let’s not tighten the screws too much” he broke one of them. Luckily, Colin helped us again - he managed to extract the broken nut and saved us over 700 pounds on new pump.
+  -
+    type: photo
+    src: water-pump-2.jpg
+    alt: Colin trying to get the broken screw out
+    title: Colin trying to get the broken screw out of the raw water pump. The screw and the pump body are made of different materials. While heating they expanded at different rates, allowing us to loosen the screw.
+    aspect_ratio: 66.666
+  -
+    type: photo
+    src: water-pump.jpg
+    alt: The pump with freshly replaced screws.
+    title: The pump with freshly replaced screws.
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      In the meantime temperatures dropped and nights at the boat started to be chilly. We happily learned how to turn on the diesel-based heating. And we made another mistake - we used up all the fuel from the tank. Next time we tried to start the engine, we sucked air into the fuel circuit. It was a great opportunity for Łukasz and Marta to practice bleeding the air from the system. All that was left - finding stubborn leaks and turning the engine - was done once again with the help of Colin. We never thought that seeing a diesel engine running could make us so happy.
+
+      ## One Thousand and One Packages
+
+      While fixing the engine and understanding the electrics were the big jobs, our time in Burnham was full of smaller tasks. Installing a new inverter, buying the safety gear, fixing winches and winch handles, mounting the jackstays and many more. Some of them required buying new parts (mostly online), sometimes without the exact part name. As we later calculated, during our stay in Burnham we ordered over 30 packages! 
+  -
+    type: photo
+    src: moonshine.jpg
+    alt: s/y Moonshine from above
+    title: 's/y Moonshine from above. Hint: you can find 3 crew members on this photo.'
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      ## The White Cliffs of Dover
+
+      After a month in Burnham on Crouch the big day has finally came: we set sail (actually, we turned on the engine) and off to the seas we went. We crossed Thames river estuary and after a brief stop in Ramsgate we arrived to famous Dover, from which we would later head out to France. Where to next? We will share soon. 
+
+      During our stay in United Kingdom we have met so many kind and helpful people. We would like to thank you all and we hope to see you again soon.
+  -
+    type: photo
+    src: crew.jpg
+    alt: The crew of s/y Moonshine
+    aspect_ratio: 56.25
+  -
+    type: markdown
+    content: |
+      Make sure to follow us in social media:
+
+      * [@sailingmoonshine on Instagram](https://instagram.com/sailingmoonshine)
+      * [Sailing Moonshine on Facebook](https://www.facebook.com/sailingmoonshine/)
+      * YouTube channel coming soon!
+  -

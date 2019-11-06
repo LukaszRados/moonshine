@@ -1,0 +1,120 @@
+title: 'Dorosłość: robisz to źle, czyli nasz dom ma silnik i pływa'
+published_text: "06 listopada 2019"
+location: "Cherbourg, Francja"
+intro: 'Posiadanie jachtu to po prostu naprawianie go w egzotycznych miejscach.'
+body: 
+  -
+    type: markdown
+    content: |
+      Gdy pierwszy raz usiedliśmy razem przy naszym stole w mesie nie mogliśmy uwierzyć, że w końcu nam się udało. Jasne, poprzednie 2 lata wypełnione były planowaniem, szukaniem i oglądaniem łódek, dyskusjami i niezliczonymi videorozmowami. Wydawać by się mogło, że będziemy przygotowani na zmianę stylu życia. Wciąż jednak nikt z nas nie mógł uwierzyć, że pijemy herbatę na NASZEJ łodzi.
+
+      Początki były powolne i wymagały sporo formalności. Wyprowadzka z Amsterdamu i Warszawy, rejestracja łódki w PZŻ i UKE, podpisywanie umowy, zakładanie konta w banku i wiele innych. Krótki pobyt w domach rodzinnych i po 2 tygodniach polecieliśmy do Burnham on Crouch w Anglii, które stało się naszym domem na następne 32 dni.
+  -
+    type: photo
+    src: burnham-on-crouch.jpg
+    alt: Burnham-on-Crouch
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      Najważniejszym zadaniem było nauczenie się jak pracuje nasz nowy dom. Posiadanie łodzi różni się od czarterowania w jednym kluczowym aspekcie: kiedy coś się zepsuje, musimy sami ustalić co to jest i jak to naprawić (albo zapłacić bardzo dużo pieniędzy komuś, kto zrobi to za nas). Jacht to jak połączenie domu i samochodu, które jeszcze na dodatek musi pływać. Sprawy komplikują się, jeśli nie posiadało się wcześniej ani samochodu, ani domu. Wyposażeni w dotychczasową wiedzę, grubą książkę o konserwacji łodzi Dona Casey’a i dostęp do internetu zabraliśmy się do pracy.
+  -
+    type: markdown
+    content: |
+      ## Niebezpieczne bezpieczniki i jak je znaleźć
+
+      Jeszcze przed zakupem, jacht poddany został szczegółowej inspekcji. Wynajęty przez nas specjalista opracował raport, w którym zawarł wszystkie elementy mogące stanowić zagrożenie lub wpływać na żywotność i zachowanie łodzi. Każdemu z punktów przypisany został priorytet, a lista była przez nas regularnie uzupełniana o nowe elementy. 
+
+      Przez pierwszy miesiąc naszego pobytu w Burnham łódka była wyjęta z wody, dzięki czemu mogliśmy położyć nowy antyfouling oraz wymienić skorodowane anody. Równie sprawnie (dzięki pomocy Mikołaja) poszła nam wymiana starych i potencjalnie niebezpiecznych zaworów.
+  -
+    type: photo
+    src: valves.jpg
+    alt: Wymiana zaworów na Moonshine
+    title: 'Mikołaj ze swoją zdobyczą: skorodowanym zaworem. W razie awarii, taki zawór mógłby w kilkadziesiąt minut zatopić naszą łódkę.'
+    aspect_ratio: 75
+  -
+    type: photo
+    src: antifouling.jpg
+    alt: Praca nad nowym antyfoulingiem
+    title: 'Jola w trakcie pracy nad nowym antyfoulingiem.'
+    aspect_ratio: 66.666
+  -
+    type: photo
+    src: anodes-2.jpg
+    alt: Wymiana anod
+    title: 'Łukasz wymieniający anodę na wale.'
+    aspect_ratio: 66.666
+  -
+    type: photo
+    src: anodes.jpg
+    alt: Porównanie starej i nowej anody
+    title: 'Przed i po: porównanie stanu starej i nowej anody.'
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      Najwięcej czasu zajęło nam ogarnięcie elektryki (proces wciąż trwa i pewnie nigdy się nie zakończy). Naszą pracę można porównać do pracy detektywa. Przez ponad dwa tygodnie w naszym nowym domu odbywało się śledztwo o roboczym tytule “umierająca lodówki”. Lodówka odmawiała współpracy jeśli cokolwiek innego było podłączone do akumulatorów. Na szczęście Marcie i Wojtkowi udało się odkryć głęboko schowany (i oczywiście przepalony) bezpiecznik. Kiedy po jego wymianie na woltomierzu ujrzeliśmy wskazanie 13,6V cieszyliśmy się jak dzieci. 
+  -
+    type: photo
+    src: mast.jpg
+    alt: Prace na maszcie
+    title: 'Wojtek na maszcie poszukujący przyczyn niedziałającego wiatromierza.'
+    aspect_ratio: 75
+  -
+    type: markdown
+    content: |
+      ## Dziwny przypadek silnika diesla
+
+      Zaskakująco dużo czasu zmuszeni byliśmy poświęcić elementowi, którego chcemy używać jak najmniej: silnikowi. Schowany pod zejściówką Yanmar 3GM30F służy wiernie na tej łodzi od prawie 30 lat i wciąż jest w całkiem niezłym stanie. Wymaga jednak regularnego serwisowania i (odrobiny) cierpliwości. Oraz wiedzy, której niestety nie posiadaliśmy.
+
+      Zanim pierwszy raz ubrudziliśmy ręce olejem, Marta i Łukasz wybrali się do North Fambridge na kurs obsługi i serwisowania silników diesla. W trakcie kursu Colin wtłoczył w ich głowy porządną dawkę wiedzy i uzbroił ich w umiejętności pozwalające na skuteczne serwisowanie silnika. 
+
+      Podbudowani kursem, wyposażeni w książki i notatki, zabrali się do pracy. Na pierwszy ogień poszła wymiana impellera - czynność prosta i rutynowa. W tym modelu silnika dostęp do niego jest niezbyt wygodny, jednak po kilkunastu minutach gimnastyki udało się go wymienić na nowy (w samą porę - stary impeller pokazywał już ślady zużycia). Nie obyło się jednak bez problemów. Dosłownie sekundę po tym jak Łukasz stwierdził, że należy uważać, żeby nie przekręcić śruby w pokrywie pompy, dokładnie to zrobił. Na szczęście Colin ruszył z pomocą i pomógł wyciągnąć zniszczony gwint (i zaoszczędzić 700 funtów na nowej pompie).
+  -
+    type: photo
+    src: water-pump-2.jpg
+    alt: Colin próbujący wyciągnąć zniszczoną śrubę
+    title: Colin próbujący wyciągnąć zniszczoną śrubę z pompy wody chłodzącej silnik. Śruba i pompa wykonane są z różnych stopów. Ogrzewana śruba rozszerza się wolniej niż pompa, co pozwala uzyskać odrobinę luzu potrzebnego do jej wykręcenia.
+    aspect_ratio: 66.666
+  -
+    type: photo
+    src: water-pump.jpg
+    alt: Pompa z nowymi śrubami
+    title: Pompa z założonymi nowymi śrubami. 
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      W międzyczasie temperatury znacznie spadły i noce na łódce stały się zimne. Na szczęście nasz jacht wyposażony jest w ogrzewanie na diesla, z którego ochoczo zaczęliśmy korzystać. Niestety, popełniliśmy szkolny błąd - zużyliśmy prawie całe paliwo ze zbiornika. Przy kolejnym uruchomieniu silnika zassaliśmy do przewodów paliwowych powietrze i silnik "umarł". Dzięki temu Łukasz i Marta mogli w praktyce przećwiczyć odpowietrzanie układu paliwowego, którego nauczyli się w trakcie kursu. Pozostało - kolejny raz przy pomocy Colina - znaleźć i naprawić wycieki paliwa i odpalić silnik. Nigdy nie sądziliśmy, że widok pracującego silnika diesla może nas tak ucieszyć. 
+
+      ## Baśń tysiąca i jednej przesyłki
+
+      Poza dużymi pracami, takimi jak serwis silnika i odszyfrowanie elektryki, nasz czas w Burnham wypełniony był dziesiątkami mniejszych zadań. Instalacja nowego inwertera, zakup środków bezpieczeństwa, naprawa kabestanów i korb, mocowanie lifeliny i wielu innych. Większość z nich wiązała się z zakupem nowych części, często przez internet, często nie znając dokładnego modelu. Jak później policzyliśmy, w trakcie naszego pobytu w Burnham odebraliśmy ponad 30 przesyłek!
+  -
+    type: photo
+    src: moonshine.jpg
+    alt: s/y Moonshine z lotu ptaka
+    title: s/y Moonshine z lotu ptaka. Na zdjęciu znaleźć można 3 członków załogi.
+    aspect_ratio: 66.666
+  -
+    type: markdown
+    content: |
+      ## W oddali ujrzymy skał zęby pod Dover
+
+      Po ponad miesiącu w Burnham on Crouch nadszedł dzień, w którym postawiliśmy żagle (a w zasadzie uruchomiliśmy silnik) i wypłynęliśmy na szerokie wody. Przecięliśmy ujście Tamizy i po krótkim postoju w Ramsgate dotarliśmy do znanego z szant Dover, skąd udaliśmy się do Francji. Gdzie dalej? O tym już wkrótce.
+
+      W trakcie naszego pobytu w Wielkiej Brytanii poznaliśmy wiele życzliwych i pomocnych osób, bez których nie udałoby nam się przeprowadzić wszystkich napraw. Z tego miejsca chcielibyśmy im serdecznie podziękować i wyrazić nadzieję, że jeszcze się z nimi spotkamy (oby na wodzie!). 
+  -
+    type: photo
+    src: crew.jpg
+    alt: Załoga Moonshine 
+    aspect_ratio: 56.25
+  -
+    type: markdown
+    content: |
+      Zapraszamy także do śledzenia nas w social mediach:
+
+      * [@sailingmoonshine na Instagramie](https://instagram.com/sailingmoonshine)
+      * [Sailing Moonshine na Facebooku](https://www.facebook.com/sailingmoonshine/)
+      * kanał na youtube już wkrótce!
+  -

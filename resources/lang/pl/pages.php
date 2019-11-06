@@ -60,7 +60,7 @@ return [
         'email' => 'moonshineyacht@gmail.com',
         'position' => [
             'header' => 'Aktualna pozycja',
-            'city' => 'Boulogne-sur-Mer, Francja',
+            'city' => 'Cherbourg, Francja',
             'last_updated' => 'Ostatnia aktualizacja',
             'see_map' => 'Zobacz na mapie',
         ],
