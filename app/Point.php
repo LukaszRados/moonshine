@@ -13,23 +13,24 @@ class Point extends Model
         $seconds = (($minutes - (int)$minutes) * 1000);
 
         return [
-            'degrees' => (int)$degrees, 
-            'minutes' => (int)$minutes, 
-            'seconds' => (int)$seconds,
+            'degrees' => abs((int)$degrees), 
+            'minutes' => abs((int)$minutes), 
+            'seconds' => abs((int)$seconds),
+            'direction' => (int)$degrees >= 0 ? 1 : 0,
         ];
     }
 
     public static function getLatParts ($lat)
     {
         $parts = self::convertFloatToParts($lat);
-        $parts['direction'] = $parts['degrees'] >= 0 ? 'N' : 'S';
+        $parts['direction'] = $parts['direction'] ? 'N' : 'S';
         return $parts;
     }
 
     public static function getLngParts ($lng)
     {
         $parts = self::convertFloatToParts($lng);
-        $parts['direction'] = $parts['degrees'] >= 0 ? 'E' : 'W';
+        $parts['direction'] = $parts['direction'] ? 'E' : 'W';
         return $parts;
     }
 
@@ -46,14 +47,14 @@ class Point extends Model
     {
         $converted = self::convertFloatToParts($lat);
         $direction = $converted['degrees'] >= 0 ? 'N' : 'S';
-        return $converted['degrees'] . '°' . $converted['minutes'] . "'" . $converted['seconds'] . ' ' . $direction; 
+        return sprintf('%02d', $converted['degrees']) . '°' . sprintf('%02d', $converted['minutes']) . "." . sprintf('%03d', $converted['seconds']) . '\' ' . $direction; 
     }
 
     public static function convertLng ($lng)
-    {
+    { //sprintf("%06d", $sum)
         $converted = self::convertFloatToParts($lng);
         $direction = $converted['degrees'] >= 0 ? 'E' : 'W';
-        return $converted['degrees'] . '°' . $converted['minutes'] . "'" . $converted['seconds'] . ' ' . $direction; 
+        return sprintf('%03d', $converted['degrees']) . '°' . sprintf('%02d', $converted['minutes']) . "." . sprintf('%03d', $converted['seconds']) . '\' ' . $direction; 
     }
 
     public static function convertToDegrees ($lat, $lng)
