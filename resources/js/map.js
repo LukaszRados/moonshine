@@ -53,6 +53,8 @@ const initMap = () => {
 
     /* Put markers for points with events */
 
+    const smallMarkers = []
+
     points.slice(0, -1).filter(point => !!point.location_pl).forEach(point => {
         const pointMarker = new google.maps.Marker({
             position: {
@@ -71,8 +73,18 @@ const initMap = () => {
             title: point.location,
             text: point.date_formatted,
         }
+        smallMarkers.push(pointMarker)
         const pointWindow = generateInfoWindow(point)
         attachEventToMarker(map, pointMarker, pointWindow)
+    })
+
+    /* Hide small markers if user zooms out */
+
+    google.maps.event.addListener(map, 'zoom_changed', () => {
+        const zoom = map.getZoom()
+        smallMarkers.forEach(marker => {
+            marker.setVisible(zoom >= 6)
+        })
     })
 
     /* Draw line for our route */
