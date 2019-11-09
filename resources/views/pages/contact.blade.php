@@ -26,10 +26,10 @@
         <h2 class='contact__position-header'>{{ __('pages.contact.position.header') }}</h2>
         <p class='contact__position-current'>
             {{ $coordinates }}<br>
-            {{ __('pages.contact.position.city') }}
+            {{ $current_position->location }}
         </p>
         <p class='contact__position-updated'>
-            {{ __('pages.contact.position.last_updated') }}: {{ date('Y-m-d, H:m', strtotime($current_position->created_at)) }}.
+            {{ __('pages.contact.position.last_updated') }}: {{ $current_position->date_formatted }}.
             <a href='{{ route('route') }}'>{{ __('pages.contact.position.see_map') }}</a>
         </p>
     </div>

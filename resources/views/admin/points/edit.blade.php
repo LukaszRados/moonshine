@@ -37,23 +37,14 @@
             <input name='lng' type='hidden' class='js-result' value='{{ $point->lng }}'>
         </div>
     </div>
-    {{-- <h2>Point description</h2>
     <div class='form__field'>
-        <label class='form__label' for='title'>Title</label>
-        <input name='title' type='text' class='form__text form__text--large' id='title'>
+        <label class='form__label' for='location_pl'>Location (PL)</label>
+        <input name='location_pl' type='text' class='form__text' id='location_pl' autocomplete='false' value='{{ old('location_pl', $point->location_pl) }}'>
     </div>
     <div class='form__field'>
-        <label class='form__label' for='content'>Text (markdown accepted)</label>
-        <textarea name='content' class='form__text form__markdown' id='content'></textarea>
+        <label class='form__label' for='location_en'>Location (EN)</label>
+        <input name='location_en' type='text' class='form__text' id='location_en' autocomplete='false' value='{{ old('location_en', $point->location_en) }}'>
     </div>
-    <div class='form__field'>
-        <label class='form__label' for='url'>URL (start with http(s))</label>
-        <input name='url' type='text' class='form__text' id='url'>
-    </div>
-    <div class='form__field'>
-        <label class='form__label' for='url_label'>URL label</label>
-        <input name='url_label' type='text' class='form__text' id='url_label'>
-    </div> --}}
     <div class='form__field'>
         <button class='button button--large'>
             Save

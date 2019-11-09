@@ -53,7 +53,7 @@ const initMap = () => {
 
     /* Put markers for points with events */
 
-    points.slice(0, -1).filter(point => !!point.options).forEach(point => {
+    points.slice(0, -1).filter(point => !!point.location_pl).forEach(point => {
         const pointMarker = new google.maps.Marker({
             position: {
                 lat: point.lat,
@@ -62,11 +62,15 @@ const initMap = () => {
             map: map,
             icon: {
                 url: mapDomElement.dataset.markerSmall,
-                size: new google.maps.Size(24, 24),
-                anchor: new google.maps.Point(12, 12),
-                scaledSize: new google.maps.Size(24, 24),
+                size: new google.maps.Size(16, 16),
+                anchor: new google.maps.Point(8, 8),
+                scaledSize: new google.maps.Size(16, 16),
             }
         })
+        point.options = {
+            title: point.location,
+            text: point.date_formatted,
+        }
         const pointWindow = generateInfoWindow(point)
         attachEventToMarker(map, pointMarker, pointWindow)
     })

@@ -26,10 +26,10 @@
         <h2 class='contact__position-header'>{{ __('pages.contact.position.header') }}</h2>
         <p class='contact__position-current'>
             {{ $coordinates }}<br>
-            {{ __('pages.contact.position.city') }}
+            {{ $current_position->location }}
         </p>
         <p class='contact__position-updated'>
-            {{ __('pages.contact.position.last_updated') }}: {{ date('Y-m-d, H:m', strtotime($current_position->created_at)) }}.
+            {{ __('pages.contact.position.last_updated') }}: {{ $current_position->date_formatted }}.
         </p>
     </div>
 </div>
@@ -40,7 +40,7 @@
         data-marker='{{ asset('img/marker.png') }}'
         data-marker-small='{{ asset('img/marker_small.png') }}'
         data-current-location-date='{{ date('Y-m-d, H:m', strtotime($current_position->created_at)) }}'
-        data-current-location-place='{{ __('pages.contact.position.city') }}'
+        data-current-location-place='{{ $current_position->location }}'
     ></div>
 </div>
 

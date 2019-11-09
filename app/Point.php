@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Point extends Model
 {
+    protected $appends = [ 'date_formatted', 'location' ];
+    protected $hidden = ['created_at', 'updated_at', 'id', 'location_en'];
+
     public static function convertFloatToParts ($number)
     {
         $degrees = $number;
@@ -51,7 +54,7 @@ class Point extends Model
     }
 
     public static function convertLng ($lng)
-    { //sprintf("%06d", $sum)
+    {
         $converted = self::convertFloatToParts($lng);
         $direction = $converted['direction'] ? 'E' : 'W';
         return sprintf('%03d', $converted['degrees']) . '°' . sprintf('%02d', $converted['minutes']) . "." . sprintf('%03d', $converted['seconds']) . '\' ' . $direction; 
@@ -60,5 +63,19 @@ class Point extends Model
     public static function convertToDegrees ($lat, $lng)
     {
         return self::convertLat($lat) . ', ' . self::convertLng($lng);
+    }
+
+    public function getLocationAttribute ()
+    {
+        if ($this->location_pl) {
+            return config()->get('locale') === 'pl' ? $this->location_pl : $this->location_en;
+        } else {
+            return __('messages.default_location');
+        }
+    }
+
+    public function getDateFormattedAttribute ()
+    {
+        return date('Y-m-d, H:m', strtotime($this->created_at));
     }
 }

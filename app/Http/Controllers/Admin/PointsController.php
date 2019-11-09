@@ -41,6 +41,8 @@ class PointsController extends Controller
         $point = new Point();
         $point->lat = (float)$request->input('lat');
         $point->lng = (float)$request->input('lng');
+        $point->location_pl = $request->input('location_pl');
+        $point->location_en = $request->input('location_en');
         $point->save();
 
         return redirect()->route('admin.points.create')->with('status', 'Point (' . $point->lat . ', ' . $point->lng . ') added');
@@ -83,6 +85,8 @@ class PointsController extends Controller
         $point = Point::where('id', $id)->firstOrFail();
         $point->lat = (float)$request->input('lat');
         $point->lng = (float)$request->input('lng');
+        $point->location_pl = $request->input('location_pl');
+        $point->location_en = $request->input('location_en');
         $point->save();
 
         return redirect()->route('admin.points.index')->with('status', 'Point (' . $point->lat . ', ' . $point->lng . ') updated.');

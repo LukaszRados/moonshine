@@ -16,7 +16,7 @@
     </tr>
     @foreach ($points as $point)
         <tr>
-            <td>{{ $point->lat }}, {{ $point->lng }}</td>
+            <td>{{ $point->lat }}, {{ $point->lng }} @if ($point->location_pl) ({{ $point->location_pl }}) @endif </td>
             <td>{{ date('Y-m-d, H:m', strtotime($point->created_at)) }}</td>
             <td><a href='{{ route('admin.points.edit', $point->id) }}' class='button'>Edit</a></td>
         </tr>

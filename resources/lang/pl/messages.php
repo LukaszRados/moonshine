@@ -7,6 +7,7 @@ return [
     'yacht_name' => 'Moonshine',
     'read_more' => 'Dowiedz się więcej',
     'read_post' => 'Czytaj dalej',
+    'default_location' => 'Na morzu ⛵',
     'specs' => [
         'header' => [
             'line_1' => 'Jeanneau',

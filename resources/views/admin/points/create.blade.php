@@ -27,6 +27,14 @@
         </div>
     </div>
     <div class='form__field'>
+        <label class='form__label' for='location_pl'>Location (PL)</label>
+        <input name='location_pl' type='text' class='form__text' id='location_pl' autocomplete='false'>
+    </div>
+    <div class='form__field'>
+        <label class='form__label' for='location_en'>Location (EN)</label>
+        <input name='location_en' type='text' class='form__text' id='location_en' autocomplete='false'>
+    </div>
+    <div class='form__field'>
         <button class='button button--large'>
             Save
         </button>
