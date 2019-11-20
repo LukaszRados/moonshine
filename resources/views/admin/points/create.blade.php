@@ -12,7 +12,10 @@
             <input name='lat_degrees' type='text' class='form__text form__text--number' placeholder='00' id='lat_degrees' required autocomplete='false'> &deg;
             <input name='lat_minutes' type='text' class='form__text form__text--number' placeholder='00' required autocomplete='false'> &acute;
             <input name='lat_seconds' type='text' class='form__text form__text--number' placeholder='000' autocomplete='false'>
-            <input name='lat_direction' type='text' class='form__text form__text--number' placeholder='N/S' value='N'>
+            <select name='lat_direction' class='form__text form__text--number'>
+                <option value='N' selected>N</option>
+                <option value='S'>S</option>
+            </select>
             <input name='lat' type='hidden' class='js-result'>
         </div>
     </div>
@@ -22,7 +25,10 @@
             <input name='lng_degrees' type='text' class='form__text form__text--number' placeholder='00' id='lng_degrees' required autocomplete='false'> &deg;
             <input name='lng_minutes' type='text' class='form__text form__text--number' placeholder='00' required autocomplete='false'> &acute;
             <input name='lng_seconds' type='text' class='form__text form__text--number' placeholder='000' autocomplete='false'>
-            <input name='lng_direction' type='text' class='form__text form__text--number' placeholder='E/W' value='W'>
+            <select name='lng_direction' class='form__text form__text--number'>
+                <option value='W' selected>W</option>
+                <option value='E'>E</option>
+            </select>
             <input name='lng' type='hidden' class='js-result'>
         </div>
     </div>

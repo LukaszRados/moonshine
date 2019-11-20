@@ -2,7 +2,7 @@
     const coordinates = document.querySelectorAll('.js-coordinates')
     
     coordinates.forEach(group => {
-        const fields = group.querySelectorAll('input')
+        const fields = group.querySelectorAll('input, select')
         const output = group.querySelector('.js-result')
         const updateOutput = () => {
             const degrees = parseInt(fields[0].value || 0, 10)
@@ -13,6 +13,7 @@
         }
         fields.forEach(field => {
             field.addEventListener('keyup', updateOutput)
+            field.addEventListener('change', updateOutput)
         })
     })
 })()

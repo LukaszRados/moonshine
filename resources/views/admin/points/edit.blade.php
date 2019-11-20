@@ -23,7 +23,10 @@
             <input name='lat_degrees' type='text' class='form__text form__text--number' value='{{ $lat['degrees'] }}' placeholder='00' id='lat_degrees' required> &deg;
             <input name='lat_minutes' type='text' class='form__text form__text--number' value='{{ $lat['minutes'] }}' placeholder='00' required> &acute;
             <input name='lat_seconds' type='text' class='form__text form__text--number' value='{{ $lat['seconds'] }}' placeholder='000'>
-            <input name='lat_direction' type='text' class='form__text form__text--number' placeholder='N/S' value='{{ $lat['direction'] }}'>
+            <select name='lat_direction' class='form__text form__text--number'>
+                <option value='N' @if ($lat['direction'] === 'N') selected @endif>N</option>
+                <option value='S' @if ($lat['direction'] === 'S') selected @endif>S</option>
+            </select>
             <input name='lat' type='hidden' class='js-result' value='{{ $point->lat }}'>
         </div>
     </div>
@@ -33,7 +36,10 @@
             <input name='lng_degrees' type='text' class='form__text form__text--number' value='{{ $lng['degrees'] }}' placeholder='000' id='lng_degrees' required> &deg;
             <input name='lng_minutes' type='text' class='form__text form__text--number' value='{{ $lng['minutes'] }}' placeholder='00' required> &acute;
             <input name='lng_seconds' type='text' class='form__text form__text--number' value='{{ $lng['seconds'] }}' placeholder='000'>
-            <input name='lng_direction' type='text' class='form__text form__text--number' placeholder='N/S' value='{{ $lng['direction'] }}'>
+            <select name='lng_direction' class='form__text form__text--number'>
+                <option value='W' @if ($lng['direction'] === 'W') selected @endif>W</option>
+                <option value='E' @if ($lng['direction'] === 'E') selected @endif>E</option>
+            </select>
             <input name='lng' type='hidden' class='js-result' value='{{ $point->lng }}'>
         </div>
     </div>
