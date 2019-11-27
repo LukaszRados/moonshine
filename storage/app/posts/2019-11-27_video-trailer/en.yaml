@@ -1,0 +1,23 @@
+title: 'Video: Our YouTube channel trailer'
+published_text: "November 27, 2019"
+location: "Brest, France"
+intro: Our YouTube channel is live! We are starting with a channel trailer that should give you a sneak preview of what will be in next videos. Soon we will add more episodes so make sure to subscribe.
+body: 
+  -
+    type: markdown
+    content: |
+      Our YouTube channel is live! We are starting with a channel trailer that should give you a sneak preview of what will be in next videos. Soon we will add more episodes so make sure to subscribe.
+
+      _The video is in Polish, but English subtitles are available._
+  -
+    type: video
+    src: https://www.youtube.com/embed/2CA9TbXGKQI
+  -
+    type: markdown
+    content: |
+      Make sure to follow us in social media:
+
+      * [@sailingmoonshine on Instagram](https://instagram.com/sailingmoonshine)
+      * [Sailing Moonshine on Facebook](https://www.facebook.com/sailingmoonshine/)
+      * [Sailing Moonshine on YouTube](https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA)
+  -

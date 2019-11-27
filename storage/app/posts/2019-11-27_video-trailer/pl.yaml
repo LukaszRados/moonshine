@@ -1,0 +1,21 @@
+title: 'Video: Zwiastun naszego kanału na YouTube'
+published_text: "27 listopada 2019"
+location: "Brest, Francja"
+intro: Wystartował nasz kanał na YouTube! Na początek zapraszamy do obejrzenia zwiastunu, który powinien dać przedsmak tego, co znajdzie się na kanale. Wkrótce dodamy więcej odcinków. Zapraszamy do subskrybowania!
+body: 
+  -
+    type: markdown
+    content: |
+      Wystartował nasz kanał na YouTube! Na początek zapraszamy do obejrzenia zwiastunu, który powinien dać przedsmak tego, co znajdzie się na kanale. Wkrótce dodamy więcej odcinków. Zapraszamy do subskrybowania!
+  -
+    type: video
+    src: https://www.youtube.com/embed/2CA9TbXGKQI
+  -
+    type: markdown
+    content: |
+      Zapraszamy także do śledzenia nas w social mediach:
+
+      * [@sailingmoonshine na Instagramie](https://instagram.com/sailingmoonshine)
+      * [Sailing Moonshine na Facebooku](https://www.facebook.com/sailingmoonshine/)
+      * [Sailing Moonshine na Youtube](https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA)
+  -
