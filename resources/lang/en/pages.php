@@ -15,7 +15,7 @@ return [
             'body' => 'We have met during studies in Kraków and we also started travelling together. Few years back we came up with an idea of buying a small sailing yacht and going for a once in the lifetime adventure.',
             'link' => 'More about the crew',
         ],
-        'recent_posts' => 'Our travel blog',
+        'recent_videos' => 'Our travel videos',
     ],
     'crew' => [
         'title' => 'The Crew',
@@ -52,6 +52,12 @@ return [
         'description' => 'Welcome to our sailing blog. Read about our cruising adventure around Europe.',
         'keywords' => 'yacht, sailing, sails, jeanneau, sun odyssey, cruising, cruser, sailing blog, sailing vlogs',
         'recent' => 'Recent entries',
+    ],
+    'videos' => [
+        'title' => 'Videos',
+        'description' => 'Welcome to our sailing videos. Read about our cruising adventure around Europe.',
+        'keywords' => 'yacht, sailing, sails, jeanneau, sun odyssey, cruising, cruser, sailing blog, sailing vlogs',
+        'recent' => 'Recent videos',
     ],
     'contact' => [
         'title' => 'Contact us',

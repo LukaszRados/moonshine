@@ -21,8 +21,8 @@
     <div class='hero__footer'></div>
 </header>
 
-@if ($previews->count() > 0)
-    @include('partials.recent_posts', [ 'posts' => $previews, 'title' => __('pages.index.recent_posts') ])
+@if ($videos->count() > 0)
+    @include('partials.recent_videos', [ 'videos' => $videos, 'title' => __('pages.index.recent_videos') ])
 @endif
 
 @include('partials.boat_specs', [ 'include_link' => 1 ])

@@ -5,6 +5,6 @@ return [
     'crew' => 'Załoga',
     'boat' => 'Jacht',
     'route' => 'Trasa',
-    'videos' => 'Video',
+    'videos' => 'Filmy',
     'contact' => 'Kontakt',
 ];

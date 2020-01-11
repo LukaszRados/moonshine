@@ -7,6 +7,7 @@ return [
     'yacht_name' => 'Moonshine',
     'read_more' => 'Find out more',
     'read_post' => 'Read more',
+    'see_video' => 'See video',
     'default_location' => 'At sea ⛵',
     'specs' => [
         'header' => [

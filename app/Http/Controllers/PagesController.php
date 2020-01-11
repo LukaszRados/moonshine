@@ -11,8 +11,8 @@ class PagesController extends Controller
 {
     public function index()
     {
-        $previews = Post::previews();
-        return view('pages.index', [ 'previews' => $previews ]);
+        $videos = Post::previews();
+        return view('pages.index', [ 'videos' => $videos ]);
     }
     
     public function crew()
