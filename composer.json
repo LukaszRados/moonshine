@@ -11,6 +11,7 @@
         "php": "^7.2",
         "erusev/parsedown": "^1.7",
         "fideloper/proxy": "^4.0",
+        "intervention/image": "^2.5",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0",
         "michelf/php-markdown": "^1.8",

@@ -7,10 +7,9 @@
         <li>
             <a href='{{ route('admin.dashboard') }}'>Dashboard</a>
         </li>
-        {{-- <li class='navigation__separator'></li> --}}
-        {{-- <li>
-            <a href='{{ route('admin.posts.index') }}'>Blog</a>
-        </li> --}}
+        <li>
+            <a href='{{ route('admin.videos.index') }}'>Videos</a>
+        </li>
         <li>
             <a href='{{ route('admin.points.index') }}'>Route</a>
         </li>

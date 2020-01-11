@@ -27,6 +27,6 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::prefix('admin')->middleware('auth')->name('admin.')->group(function () {
     Route::get('/', 'Admin\DashboardController@index')->name('dashboard');
-    Route::resource('posts', 'Admin\PostsController');
+    Route::resource('videos', 'Admin\VideosController');
     Route::resource('points', 'Admin\PointsController');
 });
