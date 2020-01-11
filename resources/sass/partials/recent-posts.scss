@@ -57,6 +57,7 @@
     .recent-posts {
         align-items: flex-start;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     .recent-post {
@@ -67,7 +68,7 @@
 
 @media screen and (min-width: 900px) {
     .recent-posts {
-        justify-content: center;
+        justify-content: flex-start;
     }
     .recent-post {
         width: calc(33.33333% - 20px);

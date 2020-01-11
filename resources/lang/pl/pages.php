@@ -15,7 +15,7 @@ return [
             'body' => 'Poznaliśmy się na studiach w Krakowie. Często wspólnie podróżowaliśmy, w tym żeglarsko. Kilka lat temu wpadliśmy na pomysł kupienia jachtu i popłynięcia w przygodę życia.',
             'link' => 'Więcej o załodze',
         ],
-        'recent_posts' => 'Nasz blog z podróży',
+        'recent_videos' => 'Nasze filmy z podróży',
     ],
     'crew' => [
         'title' => 'Załoga',
@@ -52,6 +52,12 @@ return [
         'description' => 'Witamy na naszym żeglarskim blogu. Przeczytaj o tym jak żeglujemy dookoła Europy na pokładzie 11-metrowej łódki.',
         'keywords' => 'jacht, żeglarstwo, blog żeglarski, vlog żeglarski, sailing, sails, jeanneau, sun odyssey, cruising',
         'recent' => 'Najnowsze wpisy',
+    ],
+    'videos' => [
+        'title' => 'Filmy',
+        'description' => 'Witamy na naszym żeglarskim blogu. Zobacz video o tym jak żeglujemy dookoła Europy na pokładzie 11-metrowej łódki.',
+        'keywords' => 'jacht, żeglarstwo, blog żeglarski, vlog żeglarski, sailing, sails, jeanneau, sun odyssey, cruising',
+        'recent' => 'Najnowsze filmy',
     ],
     'contact' => [
         'title' => 'Kontakt',

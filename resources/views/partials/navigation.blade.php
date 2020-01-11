@@ -21,7 +21,8 @@
             <svg xmlns='http://www.w3.org/2000/svg' width='24' height='15' viewBox='0 0 35 22'><g transform='translate(-603.5 -59.5)'><line x2='31' transform='translate(605.5 61.5)' /><line x2='31' transform='translate(605.5 70.5)' /><line x2='31' transform='translate(605.5 79.5)' /></g></svg>
         </button>
         <ul class='navigation__list'>
-            <li><a href='{{ route('posts.index') }}'>{{ __('navigation.blog') }}</a></li>
+            {{-- <li><a href='{{ route('posts.index') }}'>{{ __('navigation.blog') }}</a></li> --}}
+            <li><a href='{{ route('videos.index') }}'>{{ __('navigation.videos') }}</a></li>
             <li><a href='{{ route('crew') }}'>{{ __('navigation.crew') }}</a></li>
             <li><a href='{{ route('boat') }}'>{{ __('navigation.boat') }}</a></li>
             <li><a href='{{ route('route') }}'>{{ __('navigation.route') }}</a></li>
