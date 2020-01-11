@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Post;
 use App\Point;
+use App\Video;
 
 class PagesController extends Controller
 {
     public function index()
     {
-        $videos = Post::previews();
+        $videos = Video::orderBy('created_at', 'DESC')->limit(3)->get();
         return view('pages.index', [ 'videos' => $videos ]);
     }
     

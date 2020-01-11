@@ -4,53 +4,40 @@
 }
 .recent-post {
     margin: 0 10px 20px;
-}
-.recent-post__photo {
-    display: block;
     position: relative;
+    text-decoration: none;
 }
-.recent-post__photo:after {
+.recent-post:after {
     background: #efefef;
     content: '';
     display: block;
     height: 0;
-    padding-bottom: 66.6666%;
+    padding-bottom: 56.25%;
 }
-.recent-post__photo img {
+.recent-post img {
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
 }
-.recent-post__text {
-    padding: 30px 20px;
-}
-.recent-post__text h3 {
-    font-family: $font-serif;
-    font-size: 1.4em;
-    font-style: italic;
-    font-weight: normal;
-    margin: 0 0 15px;
-}
-.recent-post__text h3 a {
-    color: inherit;
-    text-decoration: none;
-}
-.recent-post__intro {
-    font-family: $font-serif;
-    font-size: .9em;
-    line-height: 1.7;
-    margin: 15px 0;
-}
-.recent-post__more {
-    margin: 0;
-}
-.recent-post__more a {
-    @include underline;
+.recent-post h3 {
     @include header;
-    color: $color-link;
-    font-size: .6em;
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 1.2em;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 30px;
+    position: absolute;
+    text-align: center;
+    transition: background .2s ease;
+    width: 100%;
+}
+.recent-post:hover h3 {
+    background: rgba(#000, .4);
 }
 
 @media screen and (min-width: 600px) {
@@ -59,6 +46,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-bottom: 30px;
     }
     .recent-post {
         margin: 0 10px 10px;
