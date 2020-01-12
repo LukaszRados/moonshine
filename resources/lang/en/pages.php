@@ -22,7 +22,7 @@ return [
         'description' => 'Meet the crew of the sailing yacht Moonshine cruising around the Europe.',
         'keywords' => 'crew, sailing, sails, yacht, sailing videos',
         'photo_alt' => 'The Crew of Moonshine',
-        'names' => 'Marta, Jola, Wojtek i Łukasz',
+        'names' => 'Marta, Jola, Wojtek & Łukasz',
         'above_photo' => [
             'row1' => 'Welcome to our travel journal! We are a group of four friends who first met few years back during university in Kraków. Since 2014 we are travelling (both together and solo) and despite moving around (we lived in Kraków, Warsaw, Lisbon, Tokyo and Amsterdam) we managed to stay in touch and keep rediscovering places already discovered.',
         ],

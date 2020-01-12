@@ -47,6 +47,10 @@
             <td>Facebook</td>
             <td><a href='https://www.facebook.com/sailingmoonshine/'>Sailing Moonshine</a></td>
         </tr>
+        <tr>
+            <td>YouTube</td>
+            <td><a href='https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA'>Sailing Moonshine @ YT</a></td>
+        </tr>
     </table>
 
     <div class='contact__visit'>
