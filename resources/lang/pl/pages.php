@@ -22,7 +22,7 @@ return [
         'description' => 'Poznaj załogę jachtu Moonshine płynącego dookoła Europy.',
         'keywords' => 'załoga, żeglarstwo, żagle, jacht, żeglarskie video, żeglarskie filmy',
         'photo_alt' => 'Załoga Moonshine',
-        'names' => 'Marta, Jola, Wojtek & Łukasz',
+        'names' => 'Marta, Jola, Wojtek i Łukasz',
         'above_photo' => [
             'row1' => 'Witaj w dzienniku naszej podróży! Jesteśmy czworgiem przyjaciół, którzy poznali się kilka lat temu w trakcie studiów w Krakowie. Od 2014 roku (nie)regularnie podróżujemy (razem i osobno) i mimo, że mieszkaliśmy w różnych miejscach świata (Kraków, Warszawa, Lizbona, Amsterdam, Tokio), udało nam się utrzymać świetny kontakt i podtrzymać miłość do odkrywania na nowo miejsc już odkrytych.',
         ],

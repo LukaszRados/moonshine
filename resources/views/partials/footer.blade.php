@@ -1,6 +1,6 @@
 <footer class='footer'>
     <ul class='footer__nav'>
-        <li><a href='{{ route('posts.index') }}' class='footer__item'>{{ __('navigation.blog') }}</a></li>
+        <li><a href='{{ route('videos.index') }}' class='footer__item'>{{ __('navigation.videos') }}</a></li>
         <li><a href='{{ route('crew') }}' class='footer__item'>{{ __('navigation.crew') }}</a></li>
         <li><a href='{{ route('boat') }}' class='footer__item'>{{ __('navigation.boat') }}</a></li>
         <li><a href='{{ route('route') }}' class='footer__item'>{{ __('navigation.route') }}</a></li>
