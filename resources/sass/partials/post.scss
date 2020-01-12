@@ -59,7 +59,8 @@
 /* Video */
 
 .post__video {
-    margin: 30px 0;
+    margin: 30px auto;
+    max-width: 1000px;
     position: relative;
     width: 100%;
 }
@@ -126,7 +127,7 @@
     /* Video */
 
     .post__video {
-        margin: 50px 0;
+        margin: 50px auto;
     }
 
     /* Published */

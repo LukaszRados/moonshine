@@ -37,6 +37,9 @@
     <div class='post__video'>
         <iframe src='{{ $video['url'] }}' frameborder='0' allowfullscreen></iframe>
     </div>
+    <div class='post__text'>
+        <p>{!! __('pages.videos.subscribe') !!}</p>
+    </div>
 </article>
 
 @endsection

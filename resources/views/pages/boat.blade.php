@@ -23,11 +23,21 @@
 
 @include('partials.boat_specs', [ 'include_description' => 1 ])
 
-<div class='content'>
-    <img src='{{ asset('img/moonshine.jpg') }}' alt='s/y Moonshine' class='content__photo'>
-    @foreach (__('pages.boat.content') as $row)
-        <p>{{ $row }}</p>
-    @endforeach
+<div class='post'>
+    <div class='post__photo'>
+        <div
+            class='post__photo-placeholder'
+            style='padding-bottom: 66.666%'
+        >
+            <img src='{{ asset('img/moonshine.jpg') }}' alt='s/y Moonshine'>
+        </div>
+    </div>
+
+    <div class='post__text'>
+        @foreach (__('pages.boat.content') as $row)
+            <p>{{ $row }}</p>
+        @endforeach
+    </div>
 </div>
 
 @endsection

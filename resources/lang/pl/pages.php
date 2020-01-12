@@ -58,6 +58,7 @@ return [
         'description' => 'Witamy na naszym żeglarskim blogu. Zobacz video o tym jak żeglujemy dookoła Europy na pokładzie 11-metrowej łódki.',
         'keywords' => 'jacht, żeglarstwo, blog żeglarski, vlog żeglarski, sailing, sails, jeanneau, sun odyssey, cruising',
         'recent' => 'Najnowsze filmy',
+        'subscribe' => 'Nie przegap żadnego odcinka naszych żeglarskich przygód! Zasubskrybuj <a href="https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA">nasz kanał na YouTube</a>. Nowe odcinki pojawiają się co tydzień w niedzielę.',
     ],
     'contact' => [
         'title' => 'Kontakt',
