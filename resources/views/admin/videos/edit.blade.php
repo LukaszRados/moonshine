@@ -2,10 +2,10 @@
 
 @section('body')
 <header class='header'>
-    <h1>Edit point</h1>
+    <h1>Edit video</h1>
     <ul class='header__actions'>
         <li>
-            <form action='{{ route('admin.points.destroy', $point->id) }}' method='POST'>
+            <form action='{{ route('admin.videos.destroy', $video->id) }}' method='POST'>
                 @csrf
                 <input type='hidden' name='_method' value='DELETE'>
                 <button type='submit' class='button button--danger'>Delete</a>
@@ -13,43 +13,40 @@
         </li>
     </ul>
 </header>
-<form action='{{ route('admin.points.update', $point->id) }}' method='POST' class='form'>
+<form action='{{ route('admin.videos.update', $video->id) }}' method='POST' class='form' enctype='multipart/form-data'>
     @csrf
     <input type='hidden' name='_method' value='PUT'>
-    <h2>Coordinates</h2>
     <div class='form__field'>
-        <label class='form__label' for='lat'>* Latitude</label>
-        <div class='js-coordinates'>
-            <input name='lat_degrees' type='text' class='form__text form__text--number' value='{{ $lat['degrees'] }}' placeholder='00' id='lat_degrees' required> &deg;
-            <input name='lat_minutes' type='text' class='form__text form__text--number' value='{{ $lat['minutes'] }}' placeholder='00' required> &acute;
-            <input name='lat_seconds' type='text' class='form__text form__text--number' value='{{ $lat['seconds'] }}' placeholder='000'>
-            <select name='lat_direction' class='form__text form__text--number'>
-                <option value='N' @if ($lat['direction'] === 'N') selected @endif>N</option>
-                <option value='S' @if ($lat['direction'] === 'S') selected @endif>S</option>
-            </select>
-            <input name='lat' type='hidden' class='js-result' value='{{ $point->lat }}'>
-        </div>
+        <label class='form__label' for='url'>URL (embed)</label>
+        <input name='url' type='text' class='form__text' id='url' autocomplete='false' value='{{ old('url', $video->url) }}'>
     </div>
     <div class='form__field'>
-        <label class='form__label' for='lng'>* Longitude</label>
-        <div class='js-coordinates'>
-            <input name='lng_degrees' type='text' class='form__text form__text--number' value='{{ $lng['degrees'] }}' placeholder='000' id='lng_degrees' required> &deg;
-            <input name='lng_minutes' type='text' class='form__text form__text--number' value='{{ $lng['minutes'] }}' placeholder='00' required> &acute;
-            <input name='lng_seconds' type='text' class='form__text form__text--number' value='{{ $lng['seconds'] }}' placeholder='000'>
-            <select name='lng_direction' class='form__text form__text--number'>
-                <option value='W' @if ($lng['direction'] === 'W') selected @endif>W</option>
-                <option value='E' @if ($lng['direction'] === 'E') selected @endif>E</option>
-            </select>
-            <input name='lng' type='hidden' class='js-result' value='{{ $point->lng }}'>
-        </div>
+        <label class='form__label' for='slug'>Slug</label>
+        <input name='slug' type='text' class='form__text' id='slug' autocomplete='false' disabled value='{{ old('url', $video->slug) }}'>
     </div>
     <div class='form__field'>
-        <label class='form__label' for='location_pl'>Location (PL)</label>
-        <input name='location_pl' type='text' class='form__text' id='location_pl' autocomplete='false' value='{{ old('location_pl', $point->location_pl) }}'>
+        <label class='form__label' for='photo'>Cover photo</label>
+        <input name='photo' type='file' id='photo'>
+    </div>
+
+    <h2>Polish</h2>
+    <div class='form__field'>
+        <label class='form__label' for='title_pl'>Title</label>
+        <input name='title_pl' type='text' class='form__text' id='title_pl' autocomplete='false' value='{{ old('title_pl', $video->title_pl) }}'>
     </div>
     <div class='form__field'>
-        <label class='form__label' for='location_en'>Location (EN)</label>
-        <input name='location_en' type='text' class='form__text' id='location_en' autocomplete='false' value='{{ old('location_en', $point->location_en) }}'>
+        <label class='form__label' for='description_pl'>Description</label>
+        <textarea name='description_pl' class='form__text' id='description_pl'>{{ old('description_pl', $video->description_pl) }}</textarea>
+    </div>
+
+    <h2>English</h2>
+    <div class='form__field'>
+        <label class='form__label' for='title_en'>Title</label>
+        <input name='title_en' type='text' class='form__text' id='title_en' autocomplete='false' value='{{ old('title_en', $video->title_en) }}'>
+    </div>
+    <div class='form__field'>
+        <label class='form__label' for='description_en'>Description</label>
+        <textarea name='description_en' class='form__text' id='description_en'>{{ old('description_en', $video->description_en) }}</textarea>
     </div>
     <div class='form__field'>
         <button class='button button--large'>

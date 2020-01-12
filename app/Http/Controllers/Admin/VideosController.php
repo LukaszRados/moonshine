@@ -49,7 +49,7 @@ class VideosController extends Controller
 
         \Image::make($request->file('photo'))->save(public_path() . '/videos/' . $video->slug . '.jpg');
 
-        return redirect()->route('admin.videos.create')->with('status', 'Video ' . $video->title_en . ' added');
+        return redirect()->route('admin.videos.create')->with('status', 'Video "' . $video->title_en . '" added');
     }
 
     /**
@@ -71,10 +71,8 @@ class VideosController extends Controller
      */
     public function edit($id)
     {
-        $point = Point::where('id', $id)->firstOrFail();
-        $lat = Point::getLatParts($point->lat);
-        $lng = Point::getLngParts($point->lng);
-        return view('admin.points.edit', [ 'point' => $point, 'lat' => $lat, 'lng' => $lng ]);
+        $video = Video::where('id', $id)->firstOrFail();
+        return view('admin.videos.edit', [ 'video' => $video ]);
     }
 
     /**
@@ -86,14 +84,19 @@ class VideosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $point = Point::where('id', $id)->firstOrFail();
-        $point->lat = (float)$request->input('lat');
-        $point->lng = (float)$request->input('lng');
-        $point->location_pl = $request->input('location_pl');
-        $point->location_en = $request->input('location_en');
-        $point->save();
+        $video = Video::where('id', $id)->firstOrFail();
+        $video->url = $request->input('url');
+        $video->title_pl = $request->input('title_pl');
+        $video->description_pl = $request->input('description_pl');
+        $video->title_en = $request->input('title_en');
+        $video->description_en = $request->input('description_en');
+        $video->save();
 
-        return redirect()->route('admin.points.index')->with('status', 'Point (' . $point->lat . ', ' . $point->lng . ') updated.');
+        if ($request->has('photo')) {
+            \Image::make($request->file('photo'))->save(public_path() . '/videos/' . $video->slug . '.jpg');
+        }
+
+        return redirect()->route('admin.videos.index')->with('status', 'Video "' . $video->title_en . '" updated.');
     }
 
     /**
@@ -104,7 +107,8 @@ class VideosController extends Controller
      */
     public function destroy($id)
     {
-        Point::destroy($id);
-        return redirect()->route('admin.points.index')->with('status', 'Point removed.');
+        $video = Video::where('id', $id)->firstOrFail();
+        Video::destroy($id);
+        return redirect()->route('admin.videos.index')->with('status', 'Video removed.');
     }
 }

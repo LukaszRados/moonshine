@@ -9,6 +9,15 @@ class Video extends Model
     protected $appends = [ 'date_formatted' ];
     protected $hidden = ['created_at', 'updated_at', 'id'];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        self::deleted(function(Video $video) {
+            \File::delete(public_path('/videos/' . $video->slug . '.jpg'));
+        });
+    }
+
     public function getTitleAttribute ()
     {
         if (config()->get('locale') === 'pl') {
