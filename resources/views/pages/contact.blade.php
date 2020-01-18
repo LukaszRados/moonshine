@@ -49,7 +49,7 @@
         </tr>
         <tr>
             <td>YouTube</td>
-            <td><a href='https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA'>Sailing Moonshine @ YT</a></td>
+            <td><a href='https://youtube.com/c/SailingMoonshine'>Sailing Moonshine @ YT</a></td>
         </tr>
     </table>
 

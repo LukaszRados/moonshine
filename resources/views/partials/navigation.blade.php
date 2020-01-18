@@ -3,7 +3,7 @@
         <ul class='navigation__social'>
             <li><a href='https://www.facebook.com/sailingmoonshine/'><img src='{{ asset('img/social/fb.png') }}' alt='Sailing Moonshine on Facebook' width='20'></a></li>
             <li><a href='https://instagram.com/sailingmoonshine'><img src='{{ asset('img/social/ig.png') }}' alt='Sailing Moonshine on Instagram' width='20'></a></li>
-            <li><a href='https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA'><img src='{{ asset('img/social/yt.png') }}' alt='Sailing Moonshine on Youtube' width='20'></a></li>
+            <li><a href='https://youtube.com/c/SailingMoonshine'><img src='{{ asset('img/social/yt.png') }}' alt='Sailing Moonshine on Youtube' width='20'></a></li>
         </ul>
         @if (config()->get('locale') == 'en')
             <a href='{{ url(preg_replace('/^en/', '', request()->path())) }}' class='navigation__language' lang='pl'>Polski?</a>

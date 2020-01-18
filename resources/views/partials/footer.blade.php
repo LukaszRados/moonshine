@@ -9,6 +9,6 @@
     <ul class='footer__nav footer__nav-social'>
         <li><a href='https://www.facebook.com/sailingmoonshine/' class='footer__item'><img src='{{ asset('img/social/fb.png') }}' alt='Sailing Moonshine on Facebook' width='20'></a></li>
         <li><a href='https://instagram.com/sailingmoonshine' class='footer__item'><img src='{{ asset('img/social/ig.png') }}' alt='Sailing Moonshine on Instagram' width='20'></a></li>
-        <li><a href='https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA' class='footer__item'><img src='{{ asset('img/social/yt.png') }}' alt='Sailing Moonshine on Youtube' width='20'></a></li>
+        <li><a href='https://youtube.com/c/SailingMoonshine' class='footer__item'><img src='{{ asset('img/social/yt.png') }}' alt='Sailing Moonshine on Youtube' width='20'></a></li>
     </ul>
 </footer>

@@ -58,7 +58,7 @@ return [
         'description' => 'Welcome to our sailing videos. Read about our cruising adventure around Europe.',
         'keywords' => 'yacht, sailing, sails, jeanneau, sun odyssey, cruising, cruser, sailing blog, sailing vlogs',
         'recent' => 'Recent videos',
-        'subscribe' => 'Make sure not to miss any of our videos by <a href="https://www.youtube.com/channel/UCsElUkhG9KKmbtSKmMdIBAA">subscribing to our YouTube channel</a>. New episode goes live every Sunday.',
+        'subscribe' => 'Make sure not to miss any of our videos by <a href="https://youtube.com/c/SailingMoonshine">subscribing to our YouTube channel</a>. New episode goes live every Sunday.',
     ],
     'contact' => [
         'title' => 'Contact us',
