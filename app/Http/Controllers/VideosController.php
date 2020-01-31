@@ -10,7 +10,7 @@ class VideosController extends Controller
 {
     public function index()
     {
-        $videos = Video::all()->reverse();
+        $videos = Video::where('is_published', 1)->get()->reverse();
         return view('videos.index', [ 'videos' => $videos ]);
     }
 

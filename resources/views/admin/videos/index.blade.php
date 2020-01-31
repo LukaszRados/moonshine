@@ -14,7 +14,7 @@
         <th>Options</th>
     </tr>
     @foreach ($videos as $video)
-        <tr>
+        <tr @if (!$video->is_published) style='opacity: .5' @endif>
             <td>{{ $video->title_pl }}</td>
             <td><a href='{{ route('admin.videos.edit', $video->id) }}' class='button'>Edit</a></td>
         </tr>

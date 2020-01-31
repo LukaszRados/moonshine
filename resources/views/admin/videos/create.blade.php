@@ -7,6 +7,12 @@
 <form action='{{ route('admin.videos.index') }}' method='POST' class='form' enctype='multipart/form-data'>
     @csrf
     <div class='form__field'>
+        <label class='form__label'>
+            <input type='checkbox' name='is_published' value='1'>
+            Is published?
+        </label>
+    </div>
+    <div class='form__field'>
         <label class='form__label' for='url'>URL (embed)</label>
         <input name='url' type='text' class='form__text' id='url' autocomplete='false'>
     </div>

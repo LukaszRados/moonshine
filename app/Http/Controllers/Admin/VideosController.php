@@ -39,6 +39,7 @@ class VideosController extends Controller
     public function store(Request $request)
     {
         $video = new Video();
+        $video->is_published = $request->input('is_published') ? 1 : 0;
         $video->slug = $request->input('slug');
         $video->url = $request->input('url');
         $video->title_pl = $request->input('title_pl');
@@ -85,6 +86,7 @@ class VideosController extends Controller
     public function update(Request $request, $id)
     {
         $video = Video::where('id', $id)->firstOrFail();
+        $video->is_published = $request->input('is_published') ? 1 : 0;
         $video->url = $request->input('url');
         $video->title_pl = $request->input('title_pl');
         $video->description_pl = $request->input('description_pl');

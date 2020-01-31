@@ -11,7 +11,7 @@ class PagesController extends Controller
 {
     public function index()
     {
-        $videos = Video::orderBy('created_at', 'DESC')->limit(3)->get();
+        $videos = Video::where('is_published', 1)->orderBy('created_at', 'DESC')->limit(3)->get();
         return view('pages.index', [ 'videos' => $videos ]);
     }
     

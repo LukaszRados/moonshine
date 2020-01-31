@@ -15,6 +15,7 @@ class CreateVideosTable extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->boolean('is_published')->default(false);
             $table->string('url', 512);
             $table->string('slug', 512);
             $table->string('title_pl', 512);

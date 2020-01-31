@@ -17,6 +17,12 @@
     @csrf
     <input type='hidden' name='_method' value='PUT'>
     <div class='form__field'>
+        <label class='form__label'>
+            <input type='checkbox' name='is_published' value='1' @if($video->is_published) checked @endif>
+            Is published?
+        </label>
+    </div>
+    <div class='form__field'>
         <label class='form__label' for='url'>URL (embed)</label>
         <input name='url' type='text' class='form__text' id='url' autocomplete='false' value='{{ old('url', $video->url) }}'>
     </div>
