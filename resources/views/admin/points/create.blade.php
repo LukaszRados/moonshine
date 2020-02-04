@@ -41,6 +41,10 @@
         <input name='location_en' type='text' class='form__text' id='location_en' autocomplete='false'>
     </div>
     <div class='form__field'>
+        <label class='form__label' for='miles'>Miles</label>
+        <input name='miles' type='text' class='form__text' id='miles' autocomplete='false'>
+    </div>
+    <div class='form__field'>
         <button class='button button--large'>
             Save
         </button>

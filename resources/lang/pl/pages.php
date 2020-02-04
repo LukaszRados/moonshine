@@ -46,6 +46,11 @@ return [
         'title' => 'Trasa',
         'description' => 'Aktualizowana na bieżąco trasa jachtu Moonshine w podróży dookoła Europy',
         'keywords' => 'jacht, trasa, dziennik jachtowy, jeanneau, sun oddyssey, cruising',
+        'stats' => [
+            'miles' => 'przepłyniętych mil',
+            'days' => 'dni przygody',
+            'youtube' => 'odcinków na YouTube',
+        ],
     ],
     'posts' => [
         'title' => 'Blog',

@@ -46,6 +46,11 @@ return [
         'title' => 'The Route',
         'description' => 'Regularly updated route around Europe on board Moonshine',
         'keywords' => 'yacht, route, passage planning, log, jeanneau, sun oddyssey, cruising',
+        'stats' => [
+            'miles' => 'nautical miles sailed',
+            'days' => 'days of adventure',
+            'youtube' => 'episodes on YouTube',
+        ],
     ],
     'posts' => [
         'title' => 'The Blog',

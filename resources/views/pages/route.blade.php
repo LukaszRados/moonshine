@@ -32,6 +32,21 @@
             {{ __('pages.contact.position.last_updated') }}: {{ $current_position->date_formatted }}.
         </p>
     </div>
+
+    <div class='stats'>
+        <div class='stats__column'>
+            <span class='stats__value'>{{ $miles }}</span>
+            <span class='stats__text'>{{ __('pages.route.stats.miles') }}</span>
+        </div>
+        <div class='stats__column'>
+            <span class='stats__value'>{{ $days }}</span>
+            <span class='stats__text'>{{ __('pages.route.stats.days') }}</span>
+        </div>
+        <div class='stats__column'>
+            <span class='stats__value'>{{ $videos }}</span>
+            <span class='stats__text'>{{ __('pages.route.stats.youtube') }}</span>
+        </div>
+    </div>
 </div>
 
 <div class='map-wrapper'>

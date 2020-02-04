@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Carbon\Carbon;
 
 use App\Point;
 use App\Video;
@@ -30,7 +31,18 @@ class PagesController extends Controller
         $points = Point::orderBy('created_at', 'ASC')->get();
         $currentPosition = $points[$points->count() - 1];
         $coordinates = Point::convertToDegrees($currentPosition->lat, $currentPosition->lng);
-        return view('pages.route', [ 'points' => $points, 'current_position' => $currentPosition, 'coordinates' => $coordinates ]);
+        $miles = Point::max('miles');
+        $days = Carbon::now()->diffInDays(Carbon::create(2019, 9, 15, 0, 0, 0));
+        $videos = Video::where('is_published', true)->count();
+
+        return view('pages.route', [
+            'points' => $points, 
+            'current_position' => $currentPosition, 
+            'coordinates' => $coordinates, 
+            'miles' => $miles,
+            'days' => $days,
+            'videos' => $videos,
+        ]);
     }
     
     public function contact()

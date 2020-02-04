@@ -43,6 +43,7 @@ class PointsController extends Controller
         $point->lng = (float)$request->input('lng');
         $point->location_pl = $request->input('location_pl');
         $point->location_en = $request->input('location_en');
+        $point->miles = $request->input('miles');
         $point->save();
 
         return redirect()->route('admin.points.create')->with('status', 'Point (' . $point->lat . ', ' . $point->lng . ') added');
@@ -87,6 +88,7 @@ class PointsController extends Controller
         $point->lng = (float)$request->input('lng');
         $point->location_pl = $request->input('location_pl');
         $point->location_en = $request->input('location_en');
+        $point->miles = $request->input('miles');
         $point->save();
 
         return redirect()->route('admin.points.index')->with('status', 'Point (' . $point->lat . ', ' . $point->lng . ') updated.');

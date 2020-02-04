@@ -1,0 +1,30 @@
+.stats {
+    margin: 20px 0 0;
+}
+.stats__column {
+    margin: 0 0 10px;
+    text-align: center;
+}
+.stats__value {
+    display: block;
+    font-family: $font-serif;
+    font-size: 1.6em;
+}
+.stats__text {
+    @include header;
+    color: #999;
+    font-size: .6em;
+}
+
+@media screen and (min-width: 700px) {
+    .stats {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 50px auto 0;
+    }
+    .stats__column {
+        width: 33.3333%;
+    }
+}
