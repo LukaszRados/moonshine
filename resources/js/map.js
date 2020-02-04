@@ -25,7 +25,7 @@ const initMap = () => {
     /* Initialise map */
     
     const map = new google.maps.Map(mapDomElement, {
-        zoom: 7, 
+        zoom: 5, 
         center: currentPosition,
     })
 
@@ -80,12 +80,15 @@ const initMap = () => {
 
     /* Hide small markers if user zooms out */
 
-    google.maps.event.addListener(map, 'zoom_changed', () => {
+    const onZoomChanged = () => {
         const zoom = map.getZoom()
         smallMarkers.forEach(marker => {
             marker.setVisible(zoom >= 6)
         })
-    })
+    }
+
+    google.maps.event.addListener(map, 'zoom_changed', onZoomChanged)
+    onZoomChanged()
 
     /* Draw line for our route */
 
