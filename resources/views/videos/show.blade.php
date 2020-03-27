@@ -32,7 +32,7 @@
 
 <article class='post'>
     <div class='post__text'>
-        <p>{{ $video['description'] }}</p>
+        <p>{!! nl2br($video['description']) !!}</p>
     </div>
     <div class='post__video'>
         <iframe src='{{ $video['url'] }}' frameborder='0' allowfullscreen></iframe>
