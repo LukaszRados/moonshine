@@ -27,7 +27,8 @@ class PointsController extends Controller
      */
     public function create()
     {
-        return view('admin.points.create');
+        $miles = Point::max('miles');
+        return view('admin.points.create', [ 'miles' => $miles ]);
     }
 
     /**

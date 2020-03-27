@@ -40,9 +40,13 @@
         <label class='form__label' for='location_en'>Location (EN)</label>
         <input name='location_en' type='text' class='form__text' id='location_en' autocomplete='false'>
     </div>
-    <div class='form__field'>
-        <label class='form__label' for='miles'>Miles</label>
-        <input name='miles' type='text' class='form__text' id='miles' autocomplete='false'>
+    <div class='form__field form__field--miles'>
+        <label class='form__label' for='miles_new'>Miles</label>
+        <div class='js-miles'>
+            <input name='miles_old' type='text' class='form__text form__text--number' id='miles_exist' autocomplete='false' value='{{ $miles }}'> +
+            <input name='miles_new' type='text' class='form__text form__text--number' id='miles_new' autocomplete='false'> = 
+            <input name='miles' type='text' class='form__text form__text--number' id='miles' autocomplete='false'>
+        </div>
     </div>
     <div class='form__field'>
         <button class='button button--large'>
