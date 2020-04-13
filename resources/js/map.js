@@ -1,7 +1,8 @@
 class Map {
-    constructor (points) {
+    constructor ({ points, videos }) {
         this.$el = document.querySelector('.js-map')
         this.points = points
+        this.videos = videos
         this.infoWindows = []
         this.markers = []
         this.map = null
@@ -89,6 +90,26 @@ class Map {
                 type: 'stop-position'
             })
         })
+
+        this.videos.forEach(video => {
+            this.putMarker({
+                position: {
+                    lat: video.lat,
+                    lng: video.lng,
+                },
+                icon: {
+                    url: this.$el.dataset.markerVideo,
+                    size: new google.maps.Size(16, 16),
+                    anchor: new google.maps.Point(8, 8),
+                    scaledSize: new google.maps.Size(16, 16),
+                },
+                options: {
+                    title: video.title_pl,
+                    text: `<a href='${video.url}'>${this.$el.dataset.videoText}</a>`
+                },
+                type: 'video-position'
+            })
+        })
     }
 
     onZoomChanged () {
@@ -112,5 +133,8 @@ class Map {
 }
 
 window.initMap = () => {
-    const map = new Map(window.points)
+    const map = new Map({
+        points: window.points,
+        videos: window.videos
+    })
 }

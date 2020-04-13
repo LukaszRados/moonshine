@@ -33,7 +33,7 @@ class PagesController extends Controller
         $coordinates = Point::convertToDegrees($currentPosition->lat, $currentPosition->lng);
         $miles = Point::max('miles');
         $days = Carbon::now()->diffInDays(Carbon::create(2019, 9, 15, 0, 0, 0));
-        $videos = Video::where('is_published', true)->count();
+        $videos = Video::where('is_published', true)->get();
 
         return view('pages.route', [
             'points' => $points, 

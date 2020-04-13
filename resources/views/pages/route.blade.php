@@ -43,7 +43,7 @@
             <span class='stats__text'>{{ __('pages.route.stats.days') }}</span>
         </div>
         <div class='stats__column'>
-            <span class='stats__value'>{{ $videos }}</span>
+            <span class='stats__value'>{{ $videos->count() }}</span>
             <span class='stats__text'>{{ __('pages.route.stats.youtube') }}</span>
         </div>
     </div>
@@ -54,6 +54,8 @@
         class='map js-map'
         data-marker='{{ asset('img/marker.png') }}'
         data-marker-small='{{ asset('img/marker_small.png') }}'
+        data-marker-video='{{ asset('img/marker_video.png') }}'
+        data-video-text='{{ __('messages.see_video') }}'
         data-current-location-date='{{ date('Y-m-d, H:m', strtotime($current_position->created_at)) }}'
         data-current-location-place='{{ $current_position->location }}'
     ></div>
@@ -64,6 +66,7 @@
 @section('javascript')
 <script>
     window.points = @json($points);
+    window.videos = @json($videos);
 </script>
 <script src='{{ asset(mix('js/map.js')) }}'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_KEY') }}&callback=initMap" async defer></script>

@@ -45,4 +45,9 @@ class Video extends Model
     {
         return date('Y-m-d, H:m', strtotime($this->created_at));
     }
+
+    public function getUrlAttribute ()
+    {
+        return route('videos.show', $this->slug);
+    }
 }

@@ -22,6 +22,8 @@ class CreateVideosTable extends Migration
             $table->string('title_en', 512);
             $table->text('description_pl')->nullable();
             $table->text('description_en')->nullable();
+            $table->double('lat', 9, 6)->default(0);
+            $table->double('lng', 9, 6)->default(0);
             $table->timestamps();
         });
     }
