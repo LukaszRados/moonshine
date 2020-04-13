@@ -1,105 +1,116 @@
-const mapDomElement = document.querySelector('.js-map')
-const points = window.points
-const currentPosition = points[points.length - 1]
-const infoWindows = []
+class Map {
+    constructor (points) {
+        this.$el = document.querySelector('.js-map')
+        this.points = points
+        this.infoWindows = []
+        this.markers = []
+        this.map = null
 
-const generateInfoWindow = point => {
-    return new google.maps.InfoWindow({
-        content: `<div class='map__info'>
-            <h4>${point.options.title}</h4>
-            <p>${point.options.text}</p>
-        </div>`
-    })
-}
-
-const attachEventToMarker = (map, marker, infoWindow) => {
-    marker.addListener('click', () => {
-        infoWindows.forEach(info => info.close())
-        infoWindow.open(map, marker)
-    })
-    infoWindows.push(infoWindow)
-}
-
-const initMap = () => {
-
-    /* Initialise map */
-    
-    const map = new google.maps.Map(mapDomElement, {
-        zoom: 5, 
-        center: currentPosition,
-    })
-
-    /* Put marker on current position */
-
-    const marker = new google.maps.Marker({
-        position: currentPosition,
-        map: map,
-        icon: {
-            url: mapDomElement.dataset.marker,
-            size: new google.maps.Size(36, 36),
-            anchor: new google.maps.Point(18, 18),
-            scaledSize: new google.maps.Size(36, 36),
-        }
-    })
-    if (!currentPosition.options) {
-        currentPosition.options = {
-            title: mapDomElement.dataset.currentLocationPlace,
-            text: mapDomElement.dataset.currentLocationDate,
-        }
+        this.onZoomChanged = this.onZoomChanged.bind(this)
+        this.init()
     }
-    const infoWindow = generateInfoWindow(currentPosition)
-    attachEventToMarker(map, marker, infoWindow)
-    
 
-    /* Put markers for points with events */
+    init () {
+        this.map = new google.maps.Map(this.$el, {
+            zoom: 5, 
+            center: this.points[0],
+        })
 
-    const smallMarkers = []
+        this.putAllMarkers()
+        google.maps.event.addListener(this.map, 'zoom_changed', this.onZoomChanged)
+        this.onZoomChanged()
+        this.drawRoute()
+    }
 
-    points.slice(0, -1).filter(point => !!point.location_pl).forEach(point => {
-        const pointMarker = new google.maps.Marker({
-            position: {
-                lat: point.lat,
-                lng: point.lng,
-            },
-            map: map,
+    generateInfoWindow (point) {
+        return new google.maps.InfoWindow({
+            content: `<div class='map__info'>
+                <h4>${point.options.title}</h4>
+                <p>${point.options.text}</p>
+            </div>`
+        })
+    }
+
+    attachEventToMarker (marker, infoWindow) {
+        marker.addListener('click', () => {
+            this.infoWindows.forEach(info => info.close())
+            infoWindow.open(this.map, marker)
+        })
+        this.infoWindows.push(infoWindow)
+    }
+
+    putMarker ({ position, icon, options, type }) {
+        const marker = new google.maps.Marker({
+            position,
+            map: this.map,
+            icon,
+        })
+        if (!position.options) {
+            position.options = options
+        }
+        const infoWindow = this.generateInfoWindow(position)
+        this.infoWindows.push(infoWindow)
+        this.attachEventToMarker(marker, infoWindow)
+        this.markers.push({
+            marker,
+            type
+        })
+    }
+
+    putAllMarkers () {
+        this.putMarker({
+            position: this.points[this.points.length - 1], 
             icon: {
-                url: mapDomElement.dataset.markerSmall,
-                size: new google.maps.Size(16, 16),
-                anchor: new google.maps.Point(8, 8),
-                scaledSize: new google.maps.Size(16, 16),
-            }
+                url: this.$el.dataset.marker,
+                size: new google.maps.Size(36, 36),
+                anchor: new google.maps.Point(18, 18),
+                scaledSize: new google.maps.Size(36, 36),
+            }, 
+            options: {
+                title: this.$el.dataset.currentLocationPlace,
+                text: this.$el.dataset.currentLocationDate,
+            },
+            type: 'current-position'
         })
-        point.options = {
-            title: point.location,
-            text: point.date_formatted,
-        }
-        smallMarkers.push(pointMarker)
-        const pointWindow = generateInfoWindow(point)
-        attachEventToMarker(map, pointMarker, pointWindow)
-    })
 
-    /* Hide small markers if user zooms out */
-
-    const onZoomChanged = () => {
-        const zoom = map.getZoom()
-        smallMarkers.forEach(marker => {
-            marker.setVisible(zoom >= 6)
+        this.points.slice(0, -1).filter(point => !!point.location_pl).forEach(point => {
+            this.putMarker({
+                position: point, 
+                icon: {
+                    url: this.$el.dataset.markerSmall,
+                    size: new google.maps.Size(16, 16),
+                    anchor: new google.maps.Point(8, 8),
+                    scaledSize: new google.maps.Size(16, 16),
+                }, 
+                options: {
+                    title: point.location,
+                    text: point.date_formatted,
+                },
+                type: 'stop-position'
+            })
         })
     }
 
-    google.maps.event.addListener(map, 'zoom_changed', onZoomChanged)
-    onZoomChanged()
+    onZoomChanged () {
+        const zoom = this.map.getZoom()
+        this.markers
+            .filter(marker => marker.type === 'stop-position')
+            .forEach(marker => {
+                marker.marker.setVisible(zoom >= 6)
+            })
+    }
 
-    /* Draw line for our route */
-
-    const route = new google.maps.Polyline({
-        path: points,
-        geodesic: true,
-        strokeColor: '#1E3799',
-        strokeOpacity: 1.0,
-        strokeWeight: 2
-    }).setMap(map)
-    
+    drawRoute () {
+        return new google.maps.Polyline({
+            path: this.points,
+            geodesic: true,
+            strokeColor: '#1E3799',
+            strokeOpacity: 1.0,
+            strokeWeight: 2
+        }).setMap(this.map)
+    }
 }
 
-window.initMap = initMap
+window.initMap = () => {
+    const map = new Map(window.points)
+}
