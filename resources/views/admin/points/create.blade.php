@@ -26,8 +26,8 @@
             <input name='lng_minutes' type='text' class='form__text form__text--number' placeholder='00' required autocomplete='false'> &acute;
             <input name='lng_seconds' type='text' class='form__text form__text--number' placeholder='000' autocomplete='false'>
             <select name='lng_direction' class='form__text form__text--number'>
-                <option value='W' selected>W</option>
-                <option value='E'>E</option>
+                <option value='W'>W</option>
+                <option value='E' selected>E</option>
             </select>
             <input name='lng' type='hidden' class='js-result'>
         </div>
